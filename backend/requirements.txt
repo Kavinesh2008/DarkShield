@@ -1,0 +1,10 @@
+fastapi==0.110.0
+uvicorn==0.29.0
+scikit-learn==1.6.1
+joblib==1.4.2
+pydantic==2.12.5
+torch==2.14.0
+torchvision==0.29.0
+transformers>=4.40,<5.0
+psutil>=5.9
+Pillow==12.2.0

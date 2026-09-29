@@ -1,0 +1,3314 @@
+
+==============================
+1. NORMAL CANCELLATION
+==============================
+BEHAVIOR FEATURES: {
+  totalSteps: 3,
+  actionTypes: [ 'OTHER', 'SUBSCRIPTION', 'CANCEL' ],
+  cancellationSteps: 1,
+  repeatedPromptCount: 0,
+  retentionInterference: { detected: false, count: 0 },
+  forcedActionDetected: false,
+  forcedActionType: null,
+  meaningfulBacktracking: 0,
+  cancellationDetected: true,
+  generalIntent: { detected: true, type: 'CANCEL', startIndex: 4 },
+  forcedContinuity: {
+    detected: false,
+    freeTrial: [],
+    paidAfterTrial: [],
+    autoRenewal: []
+  },
+  confirmShaming: [],
+  urgencySignals: [],
+  scarcitySignals: [],
+  obstructionDetected: false,
+  unclearChoiceDetected: false,
+  repeatedRetentionDetected: false
+}
+BEHAVIOR RESULT: {
+  riskScore: 0,
+  overallSeverity: 'LOW',
+  summary: {
+    title: 'Low Risk',
+    message: 'No significant behavioral manipulation signals were detected.'
+  },
+  summaryText: 'No significant behavioral manipulation signals were detected.',
+  whatHappened: 'You started a subscription cancellation without significant behavioral friction.',
+  whyThisMatters: 'Normal navigation was detected without significant behavioral friction.',
+  intent: {
+    detected: true,
+    type: 'CANCEL',
+    startIndex: 4,
+    cancellationDetected: true,
+    cancellationStartIndex: 4
+  },
+  behaviors: [],
+  features: {
+    totalSteps: 3,
+    actionTypes: [ 'OTHER', 'SUBSCRIPTION', 'CANCEL' ],
+    cancellationSteps: 1,
+    repeatedPromptCount: 0,
+    retentionInterference: { detected: false, count: 0 },
+    forcedActionDetected: false,
+    forcedActionType: null,
+    meaningfulBacktracking: 0,
+    cancellationDetected: true,
+    generalIntent: { detected: true, type: 'CANCEL', startIndex: 4 },
+    forcedContinuity: {
+      detected: false,
+      freeTrial: [],
+      paidAfterTrial: [],
+      autoRenewal: []
+    },
+    confirmShaming: [],
+    urgencySignals: [],
+    scarcitySignals: [],
+    obstructionDetected: false,
+    unclearChoiceDetected: false,
+    repeatedRetentionDetected: false
+  },
+  dataset_matches: [],
+  evidence: []
+}
+Core Analysis Results:
+{
+  "riskScore": 0,
+  "overallSeverity": "LOW",
+  "summary": {
+    "title": "Low Risk",
+    "message": "No significant behavioral manipulation signals were detected."
+  },
+  "whatHappened": "You started a subscription cancellation without significant behavioral friction.",
+  "whyThisMatters": "Normal navigation was detected without significant behavioral friction."
+}
+
+Detected Behaviors:
+  (none)
+
+Dataset Matches (Princeton Reference):
+  (no reference patterns matched)
+
+Features:
+{
+  "totalSteps": 3,
+  "actionTypes": [
+    "OTHER",
+    "SUBSCRIPTION",
+    "CANCEL"
+  ],
+  "cancellationSteps": 1,
+  "repeatedPromptCount": 0,
+  "retentionInterference": {
+    "detected": false,
+    "count": 0
+  },
+  "forcedActionDetected": false,
+  "forcedActionType": null,
+  "meaningfulBacktracking": 0,
+  "cancellationDetected": true,
+  "generalIntent": {
+    "detected": true,
+    "type": "CANCEL",
+    "startIndex": 4
+  },
+  "forcedContinuity": {
+    "detected": false,
+    "freeTrial": [],
+    "paidAfterTrial": [],
+    "autoRenewal": []
+  },
+  "confirmShaming": [],
+  "urgencySignals": [],
+  "scarcitySignals": [],
+  "obstructionDetected": false,
+  "unclearChoiceDetected": false,
+  "repeatedRetentionDetected": false
+}
+
+==============================
+2. EXCESSIVE STEPS (Obstruction)
+==============================
+BEHAVIOR FEATURES: {
+  totalSteps: 6,
+  actionTypes: [ 'DELETE_ACCOUNT', 'OTHER', 'OTHER', 'OTHER', 'OTHER', 'CONFIRM' ],
+  cancellationSteps: 0,
+  repeatedPromptCount: 0,
+  retentionInterference: { detected: false, count: 0 },
+  forcedActionDetected: false,
+  forcedActionType: null,
+  meaningfulBacktracking: 0,
+  cancellationDetected: false,
+  generalIntent: { detected: true, type: 'DELETE_ACCOUNT', startIndex: 0 },
+  forcedContinuity: {
+    detected: false,
+    freeTrial: [],
+    paidAfterTrial: [],
+    autoRenewal: []
+  },
+  confirmShaming: [],
+  urgencySignals: [],
+  scarcitySignals: [],
+  obstructionDetected: true,
+  unclearChoiceDetected: false,
+  repeatedRetentionDetected: false
+}
+BEHAVIOR RESULT: {
+  riskScore: 20,
+  overallSeverity: 'LOW',
+  summary: {
+    title: 'Low Risk',
+    message: 'No significant behavioral manipulation signals were detected.'
+  },
+  summaryText: 'No significant behavioral manipulation signals were detected.',
+  whatHappened: 'No cancellation flow was detected in the recorded interactions.',
+  whyThisMatters: 'Normal navigation was detected without significant behavioral friction.',
+  intent: {
+    detected: true,
+    type: 'DELETE_ACCOUNT',
+    startIndex: 0,
+    cancellationDetected: false,
+    cancellationStartIndex: -1
+  },
+  behaviors: [
+    {
+      type: 'OBSTRUCTION',
+      category: 'OBSTRUCTION',
+      title: 'Obstructed Action',
+      severity: 'MEDIUM',
+      explanation: 'The requested action required several additional steps before completion.',
+      evidence: '6 meaningful steps followed the detected intent.',
+      whyItMatters: 'Extra friction can make it harder to complete the action you intended.',
+      evidenceEvents: [Array]
+    }
+  ],
+  features: {
+    totalSteps: 6,
+    actionTypes: [ 'DELETE_ACCOUNT', 'OTHER', 'OTHER', 'OTHER', 'OTHER', 'CONFIRM' ],
+    cancellationSteps: 0,
+    repeatedPromptCount: 0,
+    retentionInterference: { detected: false, count: 0 },
+    forcedActionDetected: false,
+    forcedActionType: null,
+    meaningfulBacktracking: 0,
+    cancellationDetected: false,
+    generalIntent: { detected: true, type: 'DELETE_ACCOUNT', startIndex: 0 },
+    forcedContinuity: {
+      detected: false,
+      freeTrial: [],
+      paidAfterTrial: [],
+      autoRenewal: []
+    },
+    confirmShaming: [],
+    urgencySignals: [],
+    scarcitySignals: [],
+    obstructionDetected: true,
+    unclearChoiceDetected: false,
+    repeatedRetentionDetected: false
+  },
+  dataset_matches: [
+    {
+      type: 'OBSTRUCTION',
+      dataset_category: 'Obstruction',
+      matched_pattern_type: 'Hard to Cancel',
+      matched_pattern_string: 'Hard to Cancel',
+      confidence: 0.7308,
+      description: "Unrelated steps blocking intended account actions match 'Obstruction' category patterns.",
+      source: 'Princeton Dark Patterns at Scale',
+      reference_only: true
+    }
+  ],
+  evidence: [ { behavior: 'OBSTRUCTION', events: [Array] } ]
+}
+Core Analysis Results:
+{
+  "riskScore": 20,
+  "overallSeverity": "LOW",
+  "summary": {
+    "title": "Low Risk",
+    "message": "No significant behavioral manipulation signals were detected."
+  },
+  "whatHappened": "No cancellation flow was detected in the recorded interactions.",
+  "whyThisMatters": "Normal navigation was detected without significant behavioral friction."
+}
+
+Detected Behaviors:
+  - OBSTRUCTION: undefined
+
+Dataset Matches (Princeton Reference):
+  [1] OBSTRUCTION ΓåÆ Hard to Cancel
+      Confidence: 0.7308
+      Category: Obstruction
+      Explanation: Your observed obstruction contains signals related to the "Hard to Cancel" pattern category documented in the Princeton reference dataset. This comparison is informational and based on behavioral feature analysis.
+
+Features:
+{
+  "totalSteps": 6,
+  "actionTypes": [
+    "DELETE_ACCOUNT",
+    "OTHER",
+    "OTHER",
+    "OTHER",
+    "OTHER",
+    "CONFIRM"
+  ],
+  "cancellationSteps": 0,
+  "repeatedPromptCount": 0,
+  "retentionInterference": {
+    "detected": false,
+    "count": 0
+  },
+  "forcedActionDetected": false,
+  "forcedActionType": null,
+  "meaningfulBacktracking": 0,
+  "cancellationDetected": false,
+  "generalIntent": {
+    "detected": true,
+    "type": "DELETE_ACCOUNT",
+    "startIndex": 0
+  },
+  "forcedContinuity": {
+    "detected": false,
+    "freeTrial": [],
+    "paidAfterTrial": [],
+    "autoRenewal": []
+  },
+  "confirmShaming": [],
+  "urgencySignals": [],
+  "scarcitySignals": [],
+  "obstructionDetected": true,
+  "unclearChoiceDetected": false,
+  "repeatedRetentionDetected": false
+}
+
+==============================
+3. REPEATED PROMPTS (Nagging)
+==============================
+BEHAVIOR FEATURES: {
+  totalSteps: 7,
+  actionTypes: [
+    'CANCEL',
+    'RETENTION',
+    'DECLINE',
+    'RETENTION',
+    'DECLINE',
+    'OTHER',
+    'DECLINE'
+  ],
+  cancellationSteps: 7,
+  repeatedPromptCount: 5,
+  retentionInterference: { detected: true, count: 2 },
+  forcedActionDetected: false,
+  forcedActionType: null,
+  meaningfulBacktracking: 0,
+  cancellationDetected: true,
+  generalIntent: { detected: true, type: 'CANCEL', startIndex: 0 },
+  forcedContinuity: {
+    detected: false,
+    freeTrial: [],
+    paidAfterTrial: [],
+    autoRenewal: []
+  },
+  confirmShaming: [],
+  urgencySignals: [ 'Wait, Last Chance!' ],
+  scarcitySignals: [],
+  obstructionDetected: false,
+  unclearChoiceDetected: false,
+  repeatedRetentionDetected: true
+}
+BEHAVIOR RESULT: {
+  riskScore: 95,
+  overallSeverity: 'HIGH',
+  summary: {
+    title: 'High Risk Behavior',
+    message: 'Multiple behavioral signals were detected that may make the requested action difficult or encourage you to change your decision.'
+  },
+  summaryText: 'Multiple behavioral signals were detected that may make the requested action difficult or encourage you to change your decision.',
+  whatHappened: 'You started a subscription cancellation and encountered a retention offer before reaching confirmation.',
+  whyThisMatters: 'Multiple friction and persuasion signals were detected during the interaction.',
+  intent: {
+    detected: true,
+    type: 'CANCEL',
+    startIndex: 0,
+    cancellationDetected: true,
+    cancellationStartIndex: 0
+  },
+  behaviors: [
+    {
+      type: 'EXCESSIVE_STEPS',
+      category: 'OBSTRUCTION',
+      title: 'Excessive Steps',
+      severity: 'HIGH',
+      explanation: 'Several additional actions were required after you started cancellation.',
+      evidence: '7 meaningful actions were required after cancellation was initiated.',
+      whyItMatters: 'Extra steps can make an intended action harder to complete.',
+      evidenceEvents: [Array]
+    },
+    {
+      type: 'REPEATED_PROMPTS',
+      category: 'OTHER',
+      title: 'Repeated Prompts',
+      severity: 'HIGH',
+      explanation: 'The website presented multiple prompts or retention messages during your cancellation attempt.',
+      evidence: '5 cancellation or retention prompts were encountered.',
+      whyItMatters: 'Repeated prompts may pressure you to reconsider or make the intended action harder to complete.',
+      evidenceEvents: [Array]
+    },
+    {
+      type: 'RETENTION_INTERFERENCE',
+      category: 'PERSUASION',
+      title: 'Retention Offer',
+      severity: 'MEDIUM',
+      explanation: 'A promotional offer appeared after you started cancellation.',
+      evidence: '2 retention offers appeared after cancellation was initiated.',
+      whyItMatters: 'This may encourage you to stay instead of completing your original action.',
+      evidenceEvents: [Array]
+    },
+    {
+      type: 'URGENCY_PRESSURE',
+      category: 'PERSUASION',
+      title: 'Urgency Pressure',
+      severity: 'MEDIUM',
+      explanation: 'The website used time-sensitive language to encourage a quick decision.',
+      evidence: 'Potential urgency pressure: Wait, Last Chance!',
+      whyItMatters: 'Urgency can pressure users to act before evaluating the decision carefully.',
+      evidenceEvents: [Array]
+    },
+    {
+      type: 'REPEATED_RETENTION',
+      category: 'PERSUASION',
+      title: 'Repeated Retention Offers',
+      severity: 'HIGH',
+      explanation: 'Multiple retention offers appeared after cancellation was initiated.',
+      evidence: '2 retention attempts occurred during cancellation.',
+      whyItMatters: 'Repeated offers can make the requested action harder to complete.',
+      evidenceEvents: [Array]
+    },
+    {
+      type: 'DIFFICULT_CANCELLATION',
+      category: 'OBSTRUCTION',
+      title: 'Difficult Cancellation',
+      severity: 'HIGH',
+      explanation: 'Multiple friction signals were detected during the cancellation process.',
+      evidence: '7 cancellation steps + 2 retention offers + 5 repeated prompts detected.',
+      whyItMatters: 'The website may be making cancellation more difficult than necessary.',
+      evidenceEvents: [Array]
+    }
+  ],
+  features: {
+    totalSteps: 7,
+    actionTypes: [
+      'CANCEL',
+      'RETENTION',
+      'DECLINE',
+      'RETENTION',
+      'DECLINE',
+      'OTHER',
+      'DECLINE'
+    ],
+    cancellationSteps: 7,
+    repeatedPromptCount: 5,
+    retentionInterference: { detected: true, count: 2 },
+    forcedActionDetected: false,
+    forcedActionType: null,
+    meaningfulBacktracking: 0,
+    cancellationDetected: true,
+    generalIntent: { detected: true, type: 'CANCEL', startIndex: 0 },
+    forcedContinuity: {
+      detected: false,
+      freeTrial: [],
+      paidAfterTrial: [],
+      autoRenewal: []
+    },
+    confirmShaming: [],
+    urgencySignals: [ 'Wait, Last Chance!' ],
+    scarcitySignals: [],
+    obstructionDetected: false,
+    unclearChoiceDetected: false,
+    repeatedRetentionDetected: true
+  },
+  dataset_matches: [
+    {
+      type: 'EXCESSIVE_STEPS',
+      dataset_category: 'Obstruction',
+      matched_pattern_type: 'Hard to Cancel',
+      matched_pattern_string: 'Hard to Cancel',
+      confidence: 0.7568,
+      description: "Multiple friction signals in cancellation flow match obstruction patterns like 'Hard to Cancel'.",
+      source: 'Princeton Dark Patterns at Scale',
+      reference_only: true
+    },
+    {
+      type: 'REPEATED_PROMPTS',
+      dataset_category: 'Misdirection',
+      matched_pattern_type: 'Pressured Selling',
+      matched_pattern_string: 'Pressured Selling',
+      confidence: 0.7360000000000001,
+      description: 'Repeated persuasive prompts align with patterns designed to pressure or redirect user attention.',
+      source: 'Princeton Dark Patterns at Scale',
+      reference_only: true
+    },
+    {
+      type: 'REPEATED_PROMPTS',
+      dataset_category: 'Misdirection',
+      matched_pattern_type: 'High-demand Message',
+      matched_pattern_string: 'High-demand Message',
+      confidence: 0.7,
+      description: 'Repeated persuasive prompts align with patterns designed to pressure or redirect user attention.',
+      source: 'Princeton Dark Patterns at Scale',
+      reference_only: true
+    },
+    {
+      type: 'REPEATED_PROMPTS',
+      dataset_category: 'Urgency',
+      matched_pattern_type: 'Pressured Selling',
+      matched_pattern_string: 'Pressured Selling',
+      confidence: 0.65,
+      description: 'Repeated persuasive prompts align with patterns designed to pressure or redirect user attention.',
+      source: 'Princeton Dark Patterns at Scale',
+      reference_only: true
+    },
+    {
+      type: 'RETENTION_INTERFERENCE',
+      dataset_category: 'Urgency',
+      matched_pattern_type: 'Pressured Selling',
+      matched_pattern_string: 'Pressured Selling',
+      confidence: 0.7707999999999999,
+      description: 'Retention offers appearing after cancellation intent often use urgency/scarcity pressure or misdirection.',
+      source: 'Princeton Dark Patterns at Scale',
+      reference_only: true
+    },
+    {
+      type: 'RETENTION_INTERFERENCE',
+      dataset_category: 'Urgency',
+      matched_pattern_type: 'Limited-time Message',
+      matched_pattern_string: 'Limited-time Message',
+      confidence: 0.7,
+      description: 'Retention offers appearing after cancellation intent often use urgency/scarcity pressure or misdirection.',
+      source: 'Princeton Dark Patterns at Scale',
+      reference_only: true
+    },
+    {
+      type: 'RETENTION_INTERFERENCE',
+      dataset_category: 'Misdirection',
+      matched_pattern_type: 'Pressured Selling',
+      matched_pattern_string: 'Pressured Selling',
+      confidence: 0.6507999999999999,
+      description: 'Retention offers appearing after cancellation intent often use urgency/scarcity pressure or misdirection.',
+      source: 'Princeton Dark Patterns at Scale',
+      reference_only: true
+    },
+    {
+      type: 'DIFFICULT_CANCELLATION',
+      dataset_category: 'Obstruction',
+      matched_pattern_type: 'Hard to Cancel',
+      matched_pattern_string: 'Hard to Cancel',
+      confidence: 0.792,
+      description: "Multiple friction signals in cancellation pathway directly align with the 'Hard to Cancel' obstruction pattern.",
+      source: 'Princeton Dark Patterns at Scale',
+      reference_only: true
+    },
+    {
+      type: 'URGENCY_PRESSURE',
+      dataset_category: 'Urgency',
+      matched_pattern_type: 'Countdown Timer',
+      matched_pattern_string: 'Countdown Timer',
+      confidence: 0.664,
+      description: 'Urgency signals in observed behavior directly correspond to Princeton urgency-based patterns.',
+      source: 'Princeton Dark Patterns at Scale',
+      reference_only: true
+    },
+    {
+      type: 'URGENCY_PRESSURE',
+      dataset_category: 'Urgency',
+      matched_pattern_type: 'Limited-time Message',
+      matched_pattern_string: 'Limited-time Message',
+      confidence: 0.7,
+      description: 'Urgency signals in observed behavior directly correspond to Princeton urgency-based patterns.',
+      source: 'Princeton Dark Patterns at Scale',
+      reference_only: true
+    },
+    {
+      type: 'REPEATED_RETENTION',
+      dataset_category: 'Obstruction',
+      matched_pattern_type: 'Hard to Cancel',
+      matched_pattern_string: 'Hard to Cancel',
+      confidence: 0.748,
+      description: 'Multiple retention offers during single cancellation attempt align with obstruction and friction patterns.',
+      source: 'Princeton Dark Patterns at Scale',
+      reference_only: true
+    },
+    {
+      type: 'REPEATED_RETENTION',
+      dataset_category: 'Misdirection',
+      matched_pattern_type: 'Hard to Cancel',
+      matched_pattern_string: 'Hard to Cancel',
+      confidence: 0.65,
+      description: 'Multiple retention offers during single cancellation attempt align with obstruction and friction patterns.',
+      source: 'Princeton Dark Patterns at Scale',
+      reference_only: true
+    }
+  ],
+  evidence: [
+    { behavior: 'EXCESSIVE_STEPS', events: [Array] },
+    { behavior: 'REPEATED_PROMPTS', events: [Array] },
+    { behavior: 'RETENTION_INTERFERENCE', events: [Array] },
+    { behavior: 'URGENCY_PRESSURE', events: [Array] },
+    { behavior: 'REPEATED_RETENTION', events: [Array] },
+    { behavior: 'DIFFICULT_CANCELLATION', events: [Array] }
+  ]
+}
+Core Analysis Results:
+{
+  "riskScore": 95,
+  "overallSeverity": "HIGH",
+  "summary": {
+    "title": "High Risk Behavior",
+    "message": "Multiple behavioral signals were detected that may make the requested action difficult or encourage you to change your decision."
+  },
+  "whatHappened": "You started a subscription cancellation and encountered a retention offer before reaching confirmation.",
+  "whyThisMatters": "Multiple friction and persuasion signals were detected during the interaction."
+}
+
+Detected Behaviors:
+  - EXCESSIVE_STEPS: undefined
+  - REPEATED_PROMPTS: undefined
+  - RETENTION_INTERFERENCE: undefined
+  - URGENCY_PRESSURE: undefined
+  - REPEATED_RETENTION: undefined
+  - DIFFICULT_CANCELLATION: undefined
+
+Dataset Matches (Princeton Reference):
+  [1] EXCESSIVE_STEPS ΓåÆ Hard to Cancel
+      Confidence: 0.7568
+      Category: Obstruction
+      Explanation: Your observed excessive steps contains signals related to the "Hard to Cancel" pattern category documented in the Princeton reference dataset. This comparison is informational and based on behavioral feature analysis.
+  [2] REPEATED_PROMPTS ΓåÆ Pressured Selling
+      Confidence: 0.7360000000000001
+      Category: Misdirection
+      Explanation: Your observed repeated prompts contains signals related to the "Pressured Selling" pattern category documented in the Princeton reference dataset. This comparison is informational and based on behavioral feature analysis.
+  [3] REPEATED_PROMPTS ΓåÆ High-demand Message
+      Confidence: 0.7
+      Category: Misdirection
+      Explanation: Your observed repeated prompts contains signals related to the "High-demand Message" pattern category documented in the Princeton reference dataset. This comparison is informational and based on behavioral feature analysis.
+  [4] REPEATED_PROMPTS ΓåÆ Pressured Selling
+      Confidence: 0.65
+      Category: Urgency
+      Explanation: Your observed repeated prompts contains signals related to the "Pressured Selling" pattern category documented in the Princeton reference dataset. This comparison is informational and based on behavioral feature analysis.
+  [5] RETENTION_INTERFERENCE ΓåÆ Pressured Selling
+      Confidence: 0.7707999999999999
+      Category: Urgency
+      Explanation: Your observed retention interference contains signals related to the "Pressured Selling" pattern category documented in the Princeton reference dataset. This comparison is informational and based on behavioral feature analysis.
+  [6] RETENTION_INTERFERENCE ΓåÆ Limited-time Message
+      Confidence: 0.7
+      Category: Urgency
+      Explanation: Your observed retention interference contains signals related to the "Limited-time Message" pattern category documented in the Princeton reference dataset. This comparison is informational and based on behavioral feature analysis.
+  [7] RETENTION_INTERFERENCE ΓåÆ Pressured Selling
+      Confidence: 0.6507999999999999
+      Category: Misdirection
+      Explanation: Your observed retention interference contains signals related to the "Pressured Selling" pattern category documented in the Princeton reference dataset. This comparison is informational and based on behavioral feature analysis.
+  [8] DIFFICULT_CANCELLATION ΓåÆ Hard to Cancel
+      Confidence: 0.792
+      Category: Obstruction
+      Explanation: Your observed difficult cancellation contains signals related to the "Hard to Cancel" pattern category documented in the Princeton reference dataset. This comparison is informational and based on behavioral feature analysis.
+  [9] URGENCY_PRESSURE ΓåÆ Countdown Timer
+      Confidence: 0.664
+      Category: Urgency
+      Explanation: Your observed urgency pressure contains signals related to the "Countdown Timer" pattern category documented in the Princeton reference dataset. This comparison is informational and based on behavioral feature analysis.
+  [10] URGENCY_PRESSURE ΓåÆ Limited-time Message
+      Confidence: 0.7
+      Category: Urgency
+      Explanation: Your observed urgency pressure contains signals related to the "Limited-time Message" pattern category documented in the Princeton reference dataset. This comparison is informational and based on behavioral feature analysis.
+  [11] REPEATED_RETENTION ΓåÆ Hard to Cancel
+      Confidence: 0.748
+      Category: Obstruction
+      Explanation: Your observed repeated retention contains signals related to the "Hard to Cancel" pattern category documented in the Princeton reference dataset. This comparison is informational and based on behavioral feature analysis.
+  [12] REPEATED_RETENTION ΓåÆ Hard to Cancel
+      Confidence: 0.65
+      Category: Misdirection
+      Explanation: Your observed repeated retention contains signals related to the "Hard to Cancel" pattern category documented in the Princeton reference dataset. This comparison is informational and based on behavioral feature analysis.
+
+Features:
+{
+  "totalSteps": 7,
+  "actionTypes": [
+    "CANCEL",
+    "RETENTION",
+    "DECLINE",
+    "RETENTION",
+    "DECLINE",
+    "OTHER",
+    "DECLINE"
+  ],
+  "cancellationSteps": 7,
+  "repeatedPromptCount": 5,
+  "retentionInterference": {
+    "detected": true,
+    "count": 2
+  },
+  "forcedActionDetected": false,
+  "forcedActionType": null,
+  "meaningfulBacktracking": 0,
+  "cancellationDetected": true,
+  "generalIntent": {
+    "detected": true,
+    "type": "CANCEL",
+    "startIndex": 0
+  },
+  "forcedContinuity": {
+    "detected": false,
+    "freeTrial": [],
+    "paidAfterTrial": [],
+    "autoRenewal": []
+  },
+  "confirmShaming": [],
+  "urgencySignals": [
+    "Wait, Last Chance!"
+  ],
+  "scarcitySignals": [],
+  "obstructionDetected": false,
+  "unclearChoiceDetected": false,
+  "repeatedRetentionDetected": true
+}
+
+==============================
+4. FORCED ACTION
+==============================
+BEHAVIOR FEATURES: {
+  totalSteps: 4,
+  actionTypes: [ 'CANCEL', 'SURVEY', 'SURVEY', 'CONFIRM' ],
+  cancellationSteps: 4,
+  repeatedPromptCount: 0,
+  retentionInterference: { detected: false, count: 0 },
+  forcedActionDetected: true,
+  forcedActionType: 'SURVEY',
+  meaningfulBacktracking: 0,
+  cancellationDetected: true,
+  generalIntent: { detected: true, type: 'CANCEL', startIndex: 0 },
+  forcedContinuity: {
+    detected: false,
+    freeTrial: [],
+    paidAfterTrial: [],
+    autoRenewal: []
+  },
+  confirmShaming: [],
+  urgencySignals: [],
+  scarcitySignals: [],
+  obstructionDetected: false,
+  unclearChoiceDetected: false,
+  repeatedRetentionDetected: false
+}
+BEHAVIOR RESULT: {
+  riskScore: 25,
+  overallSeverity: 'LOW',
+  summary: {
+    title: 'Low Risk',
+    message: 'No significant behavioral manipulation signals were detected.'
+  },
+  summaryText: 'No significant behavioral manipulation signals were detected.',
+  whatHappened: 'You started a subscription cancellation and an additional survey before reaching confirmation.',
+  whyThisMatters: 'Normal navigation was detected without significant behavioral friction.',
+  intent: {
+    detected: true,
+    type: 'CANCEL',
+    startIndex: 0,
+    cancellationDetected: true,
+    cancellationStartIndex: 0
+  },
+  behaviors: [
+    {
+      type: 'FORCED_ACTION',
+      category: 'OBSTRUCTION',
+      title: 'Forced Action',
+      severity: 'HIGH',
+      explanation: 'A survey or additional action appeared before you could complete cancellation.',
+      evidence: 'A cancellation survey was encountered before final cancellation.',
+      whyItMatters: 'This adds an additional step between your decision and completing the requested action.',
+      evidenceEvents: [Array]
+    }
+  ],
+  features: {
+    totalSteps: 4,
+    actionTypes: [ 'CANCEL', 'SURVEY', 'SURVEY', 'CONFIRM' ],
+    cancellationSteps: 4,
+    repeatedPromptCount: 0,
+    retentionInterference: { detected: false, count: 0 },
+    forcedActionDetected: true,
+    forcedActionType: 'SURVEY',
+    meaningfulBacktracking: 0,
+    cancellationDetected: true,
+    generalIntent: { detected: true, type: 'CANCEL', startIndex: 0 },
+    forcedContinuity: {
+      detected: false,
+      freeTrial: [],
+      paidAfterTrial: [],
+      autoRenewal: []
+    },
+    confirmShaming: [],
+    urgencySignals: [],
+    scarcitySignals: [],
+    obstructionDetected: false,
+    unclearChoiceDetected: false,
+    repeatedRetentionDetected: false
+  },
+  dataset_matches: [
+    {
+      type: 'FORCED_ACTION',
+      dataset_category: 'Forced Action',
+      matched_pattern_type: 'Forced Enrollment',
+      matched_pattern_string: 'Forced Enrollment',
+      confidence: 0.7735,
+      description: 'Forced actions detected (e.g., surveys before cancellation) match forced-action and obstruction patterns.',
+      source: 'Princeton Dark Patterns at Scale',
+      reference_only: true
+    },
+    {
+      type: 'FORCED_ACTION',
+      dataset_category: 'Forced Action',
+      matched_pattern_type: 'Sneak into Basket',
+      matched_pattern_string: 'Sneak into Basket',
+      confidence: 0.7,
+      description: 'Forced actions detected (e.g., surveys before cancellation) match forced-action and obstruction patterns.',
+      source: 'Princeton Dark Patterns at Scale',
+      reference_only: true
+    },
+    {
+      type: 'FORCED_ACTION',
+      dataset_category: 'Obstruction',
+      matched_pattern_type: 'Forced Enrollment',
+      matched_pattern_string: 'Forced Enrollment',
+      confidence: 0.6535,
+      description: 'Forced actions detected (e.g., surveys before cancellation) match forced-action and obstruction patterns.',
+      source: 'Princeton Dark Patterns at Scale',
+      reference_only: true
+    }
+  ],
+  evidence: [ { behavior: 'FORCED_ACTION', events: [Array] } ]
+}
+Core Analysis Results:
+{
+  "riskScore": 25,
+  "overallSeverity": "LOW",
+  "summary": {
+    "title": "Low Risk",
+    "message": "No significant behavioral manipulation signals were detected."
+  },
+  "whatHappened": "You started a subscription cancellation and an additional survey before reaching confirmation.",
+  "whyThisMatters": "Normal navigation was detected without significant behavioral friction."
+}
+
+Detected Behaviors:
+  - FORCED_ACTION: undefined
+
+Dataset Matches (Princeton Reference):
+  [1] FORCED_ACTION ΓåÆ Forced Enrollment
+      Confidence: 0.7735
+      Category: Forced Action
+      Explanation: Your observed forced action contains signals related to the "Forced Enrollment" pattern category documented in the Princeton reference dataset. This comparison is informational and based on behavioral feature analysis.
+  [2] FORCED_ACTION ΓåÆ Sneak into Basket
+      Confidence: 0.7
+      Category: Forced Action
+      Explanation: Your observed forced action contains signals related to the "Sneak into Basket" pattern category documented in the Princeton reference dataset. This comparison is informational and based on behavioral feature analysis.
+  [3] FORCED_ACTION ΓåÆ Forced Enrollment
+      Confidence: 0.6535
+      Category: Obstruction
+      Explanation: Your observed forced action contains signals related to the "Forced Enrollment" pattern category documented in the Princeton reference dataset. This comparison is informational and based on behavioral feature analysis.
+
+Features:
+{
+  "totalSteps": 4,
+  "actionTypes": [
+    "CANCEL",
+    "SURVEY",
+    "SURVEY",
+    "CONFIRM"
+  ],
+  "cancellationSteps": 4,
+  "repeatedPromptCount": 0,
+  "retentionInterference": {
+    "detected": false,
+    "count": 0
+  },
+  "forcedActionDetected": true,
+  "forcedActionType": "SURVEY",
+  "meaningfulBacktracking": 0,
+  "cancellationDetected": true,
+  "generalIntent": {
+    "detected": true,
+    "type": "CANCEL",
+    "startIndex": 0
+  },
+  "forcedContinuity": {
+    "detected": false,
+    "freeTrial": [],
+    "paidAfterTrial": [],
+    "autoRenewal": []
+  },
+  "confirmShaming": [],
+  "urgencySignals": [],
+  "scarcitySignals": [],
+  "obstructionDetected": false,
+  "unclearChoiceDetected": false,
+  "repeatedRetentionDetected": false
+}
+
+==============================
+5. RETENTION INTERFERENCE
+==============================
+BEHAVIOR FEATURES: {
+  totalSteps: 6,
+  actionTypes: [ 'CANCEL', 'OTHER', 'RETENTION', 'CANCEL', 'RETENTION', 'CONFIRM' ],
+  cancellationSteps: 6,
+  repeatedPromptCount: 2,
+  retentionInterference: { detected: true, count: 2 },
+  forcedActionDetected: false,
+  forcedActionType: null,
+  meaningfulBacktracking: 0,
+  cancellationDetected: true,
+  generalIntent: { detected: true, type: 'CANCEL', startIndex: 0 },
+  forcedContinuity: {
+    detected: false,
+    freeTrial: [],
+    paidAfterTrial: [],
+    autoRenewal: []
+  },
+  confirmShaming: [],
+  urgencySignals: [],
+  scarcitySignals: [],
+  obstructionDetected: true,
+  unclearChoiceDetected: false,
+  repeatedRetentionDetected: true
+}
+BEHAVIOR RESULT: {
+  riskScore: 85,
+  overallSeverity: 'HIGH',
+  summary: {
+    title: 'High Risk Behavior',
+    message: 'Multiple behavioral signals were detected that may make the requested action difficult or encourage you to change your decision.'
+  },
+  summaryText: 'Multiple behavioral signals were detected that may make the requested action difficult or encourage you to change your decision.',
+  whatHappened: 'You started a subscription cancellation and encountered a retention offer before reaching confirmation.',
+  whyThisMatters: 'Multiple friction and persuasion signals were detected during the interaction.',
+  intent: {
+    detected: true,
+    type: 'CANCEL',
+    startIndex: 0,
+    cancellationDetected: true,
+    cancellationStartIndex: 0
+  },
+  behaviors: [
+    {
+      type: 'REPEATED_PROMPTS',
+      category: 'OTHER',
+      title: 'Repeated Prompts',
+      severity: 'MEDIUM',
+      explanation: 'The website presented multiple prompts or retention messages during your cancellation attempt.',
+      evidence: '2 cancellation or retention prompts were encountered.',
+      whyItMatters: 'Repeated prompts may pressure you to reconsider or make the intended action harder to complete.',
+      evidenceEvents: [Array]
+    },
+    {
+      type: 'RETENTION_INTERFERENCE',
+      category: 'PERSUASION',
+      title: 'Retention Offer',
+      severity: 'MEDIUM',
+      explanation: 'A promotional offer appeared after you started cancellation.',
+      evidence: '2 retention offers appeared after cancellation was initiated.',
+      whyItMatters: 'This may encourage you to stay instead of completing your original action.',
+      evidenceEvents: [Array]
+    },
+    {
+      type: 'OBSTRUCTION',
+      category: 'OBSTRUCTION',
+      title: 'Obstructed Action',
+      severity: 'MEDIUM',
+      explanation: 'The requested action required several additional steps before completion.',
+      evidence: '6 meaningful steps followed the detected intent.',
+      whyItMatters: 'Extra friction can make it harder to complete the action you intended.',
+      evidenceEvents: [Array]
+    },
+    {
+      type: 'REPEATED_RETENTION',
+      category: 'PERSUASION',
+      title: 'Repeated Retention Offers',
+      severity: 'HIGH',
+      explanation: 'Multiple retention offers appeared after cancellation was initiated.',
+      evidence: '2 retention attempts occurred during cancellation.',
+      whyItMatters: 'Repeated offers can make the requested action harder to complete.',
+      evidenceEvents: [Array]
+    },
+    {
+      type: 'DIFFICULT_CANCELLATION',
+      category: 'OBSTRUCTION',
+      title: 'Difficult Cancellation',
+      severity: 'HIGH',
+      explanation: 'Multiple friction signals were detected during the cancellation process.',
+      evidence: '6 cancellation steps + 2 retention offers + 2 repeated prompts detected.',
+      whyItMatters: 'The website may be making cancellation more difficult than necessary.',
+      evidenceEvents: [Array]
+    }
+  ],
+  features: {
+    totalSteps: 6,
+    actionTypes: [
+      'CANCEL',
+      'OTHER',
+      'RETENTION',
+      'CANCEL',
+      'RETENTION',
+      'CONFIRM'
+    ],
+    cancellationSteps: 6,
+    repeatedPromptCount: 2,
+    retentionInterference: { detected: true, count: 2 },
+    forcedActionDetected: false,
+    forcedActionType: null,
+    meaningfulBacktracking: 0,
+    cancellationDetected: true,
+    generalIntent: { detected: true, type: 'CANCEL', startIndex: 0 },
+    forcedContinuity: {
+      detected: false,
+      freeTrial: [],
+      paidAfterTrial: [],
+      autoRenewal: []
+    },
+    confirmShaming: [],
+    urgencySignals: [],
+    scarcitySignals: [],
+    obstructionDetected: true,
+    unclearChoiceDetected: false,
+    repeatedRetentionDetected: true
+  },
+  dataset_matches: [
+    {
+      type: 'REPEATED_PROMPTS',
+      dataset_category: 'Misdirection',
+      matched_pattern_type: 'Pressured Selling',
+      matched_pattern_string: 'Pressured Selling',
+      confidence: 0.6240000000000001,
+      description: 'Repeated persuasive prompts align with patterns designed to pressure or redirect user attention.',
+      source: 'Princeton Dark Patterns at Scale',
+      reference_only: true
+    },
+    {
+      type: 'REPEATED_PROMPTS',
+      dataset_category: 'Misdirection',
+      matched_pattern_type: 'High-demand Message',
+      matched_pattern_string: 'High-demand Message',
+      confidence: 0.7,
+      description: 'Repeated persuasive prompts align with patterns designed to pressure or redirect user attention.',
+      source: 'Princeton Dark Patterns at Scale',
+      reference_only: true
+    },
+    {
+      type: 'REPEATED_PROMPTS',
+      dataset_category: 'Urgency',
+      matched_pattern_type: 'Pressured Selling',
+      matched_pattern_string: 'Pressured Selling',
+      confidence: 0.65,
+      description: 'Repeated persuasive prompts align with patterns designed to pressure or redirect user attention.',
+      source: 'Princeton Dark Patterns at Scale',
+      reference_only: true
+    },
+    {
+      type: 'RETENTION_INTERFERENCE',
+      dataset_category: 'Urgency',
+      matched_pattern_type: 'Pressured Selling',
+      matched_pattern_string: 'Pressured Selling',
+      confidence: 0.7707999999999999,
+      description: 'Retention offers appearing after cancellation intent often use urgency/scarcity pressure or misdirection.',
+      source: 'Princeton Dark Patterns at Scale',
+      reference_only: true
+    },
+    {
+      type: 'RETENTION_INTERFERENCE',
+      dataset_category: 'Urgency',
+      matched_pattern_type: 'Limited-time Message',
+      matched_pattern_string: 'Limited-time Message',
+      confidence: 0.7,
+      description: 'Retention offers appearing after cancellation intent often use urgency/scarcity pressure or misdirection.',
+      source: 'Princeton Dark Patterns at Scale',
+      reference_only: true
+    },
+    {
+      type: 'RETENTION_INTERFERENCE',
+      dataset_category: 'Misdirection',
+      matched_pattern_type: 'Pressured Selling',
+      matched_pattern_string: 'Pressured Selling',
+      confidence: 0.6507999999999999,
+      description: 'Retention offers appearing after cancellation intent often use urgency/scarcity pressure or misdirection.',
+      source: 'Princeton Dark Patterns at Scale',
+      reference_only: true
+    },
+    {
+      type: 'DIFFICULT_CANCELLATION',
+      dataset_category: 'Obstruction',
+      matched_pattern_type: 'Hard to Cancel',
+      matched_pattern_string: 'Hard to Cancel',
+      confidence: 0.792,
+      description: "Multiple friction signals in cancellation pathway directly align with the 'Hard to Cancel' obstruction pattern.",
+      source: 'Princeton Dark Patterns at Scale',
+      reference_only: true
+    },
+    {
+      type: 'OBSTRUCTION',
+      dataset_category: 'Obstruction',
+      matched_pattern_type: 'Hard to Cancel',
+      matched_pattern_string: 'Hard to Cancel',
+      confidence: 0.7308,
+      description: "Unrelated steps blocking intended account actions match 'Obstruction' category patterns.",
+      source: 'Princeton Dark Patterns at Scale',
+      reference_only: true
+    },
+    {
+      type: 'REPEATED_RETENTION',
+      dataset_category: 'Obstruction',
+      matched_pattern_type: 'Hard to Cancel',
+      matched_pattern_string: 'Hard to Cancel',
+      confidence: 0.748,
+      description: 'Multiple retention offers during single cancellation attempt align with obstruction and friction patterns.',
+      source: 'Princeton Dark Patterns at Scale',
+      reference_only: true
+    },
+    {
+      type: 'REPEATED_RETENTION',
+      dataset_category: 'Misdirection',
+      matched_pattern_type: 'Hard to Cancel',
+      matched_pattern_string: 'Hard to Cancel',
+      confidence: 0.65,
+      description: 'Multiple retention offers during single cancellation attempt align with obstruction and friction patterns.',
+      source: 'Princeton Dark Patterns at Scale',
+      reference_only: true
+    }
+  ],
+  evidence: [
+    { behavior: 'REPEATED_PROMPTS', events: [Array] },
+    { behavior: 'RETENTION_INTERFERENCE', events: [Array] },
+    { behavior: 'OBSTRUCTION', events: [Array] },
+    { behavior: 'REPEATED_RETENTION', events: [Array] },
+    { behavior: 'DIFFICULT_CANCELLATION', events: [Array] }
+  ]
+}
+Core Analysis Results:
+{
+  "riskScore": 85,
+  "overallSeverity": "HIGH",
+  "summary": {
+    "title": "High Risk Behavior",
+    "message": "Multiple behavioral signals were detected that may make the requested action difficult or encourage you to change your decision."
+  },
+  "whatHappened": "You started a subscription cancellation and encountered a retention offer before reaching confirmation.",
+  "whyThisMatters": "Multiple friction and persuasion signals were detected during the interaction."
+}
+
+Detected Behaviors:
+  - REPEATED_PROMPTS: undefined
+  - RETENTION_INTERFERENCE: undefined
+  - OBSTRUCTION: undefined
+  - REPEATED_RETENTION: undefined
+  - DIFFICULT_CANCELLATION: undefined
+
+Dataset Matches (Princeton Reference):
+  [1] REPEATED_PROMPTS ΓåÆ Pressured Selling
+      Confidence: 0.6240000000000001
+      Category: Misdirection
+      Explanation: Your observed repeated prompts contains signals related to the "Pressured Selling" pattern category documented in the Princeton reference dataset. This comparison is informational and based on behavioral feature analysis.
+  [2] REPEATED_PROMPTS ΓåÆ High-demand Message
+      Confidence: 0.7
+      Category: Misdirection
+      Explanation: Your observed repeated prompts contains signals related to the "High-demand Message" pattern category documented in the Princeton reference dataset. This comparison is informational and based on behavioral feature analysis.
+  [3] REPEATED_PROMPTS ΓåÆ Pressured Selling
+      Confidence: 0.65
+      Category: Urgency
+      Explanation: Your observed repeated prompts contains signals related to the "Pressured Selling" pattern category documented in the Princeton reference dataset. This comparison is informational and based on behavioral feature analysis.
+  [4] RETENTION_INTERFERENCE ΓåÆ Pressured Selling
+      Confidence: 0.7707999999999999
+      Category: Urgency
+      Explanation: Your observed retention interference contains signals related to the "Pressured Selling" pattern category documented in the Princeton reference dataset. This comparison is informational and based on behavioral feature analysis.
+  [5] RETENTION_INTERFERENCE ΓåÆ Limited-time Message
+      Confidence: 0.7
+      Category: Urgency
+      Explanation: Your observed retention interference contains signals related to the "Limited-time Message" pattern category documented in the Princeton reference dataset. This comparison is informational and based on behavioral feature analysis.
+  [6] RETENTION_INTERFERENCE ΓåÆ Pressured Selling
+      Confidence: 0.6507999999999999
+      Category: Misdirection
+      Explanation: Your observed retention interference contains signals related to the "Pressured Selling" pattern category documented in the Princeton reference dataset. This comparison is informational and based on behavioral feature analysis.
+  [7] DIFFICULT_CANCELLATION ΓåÆ Hard to Cancel
+      Confidence: 0.792
+      Category: Obstruction
+      Explanation: Your observed difficult cancellation contains signals related to the "Hard to Cancel" pattern category documented in the Princeton reference dataset. This comparison is informational and based on behavioral feature analysis.
+  [8] OBSTRUCTION ΓåÆ Hard to Cancel
+      Confidence: 0.7308
+      Category: Obstruction
+      Explanation: Your observed obstruction contains signals related to the "Hard to Cancel" pattern category documented in the Princeton reference dataset. This comparison is informational and based on behavioral feature analysis.
+  [9] REPEATED_RETENTION ΓåÆ Hard to Cancel
+      Confidence: 0.748
+      Category: Obstruction
+      Explanation: Your observed repeated retention contains signals related to the "Hard to Cancel" pattern category documented in the Princeton reference dataset. This comparison is informational and based on behavioral feature analysis.
+  [10] REPEATED_RETENTION ΓåÆ Hard to Cancel
+      Confidence: 0.65
+      Category: Misdirection
+      Explanation: Your observed repeated retention contains signals related to the "Hard to Cancel" pattern category documented in the Princeton reference dataset. This comparison is informational and based on behavioral feature analysis.
+
+Features:
+{
+  "totalSteps": 6,
+  "actionTypes": [
+    "CANCEL",
+    "OTHER",
+    "RETENTION",
+    "CANCEL",
+    "RETENTION",
+    "CONFIRM"
+  ],
+  "cancellationSteps": 6,
+  "repeatedPromptCount": 2,
+  "retentionInterference": {
+    "detected": true,
+    "count": 2
+  },
+  "forcedActionDetected": false,
+  "forcedActionType": null,
+  "meaningfulBacktracking": 0,
+  "cancellationDetected": true,
+  "generalIntent": {
+    "detected": true,
+    "type": "CANCEL",
+    "startIndex": 0
+  },
+  "forcedContinuity": {
+    "detected": false,
+    "freeTrial": [],
+    "paidAfterTrial": [],
+    "autoRenewal": []
+  },
+  "confirmShaming": [],
+  "urgencySignals": [],
+  "scarcitySignals": [],
+  "obstructionDetected": true,
+  "unclearChoiceDetected": false,
+  "repeatedRetentionDetected": true
+}
+
+==============================
+6. DIFFICULT CANCELLATION (Combined Obstruction)
+==============================
+BEHAVIOR FEATURES: {
+  totalSteps: 7,
+  actionTypes: [
+    'CANCEL',
+    'RETENTION',
+    'DECLINE',
+    'OTHER',
+    'OTHER',
+    'CANCEL',
+    'CONFIRM'
+  ],
+  cancellationSteps: 7,
+  repeatedPromptCount: 0,
+  retentionInterference: { detected: true, count: 1 },
+  forcedActionDetected: true,
+  forcedActionType: 'RETENTION_OFFER',
+  meaningfulBacktracking: 0,
+  cancellationDetected: true,
+  generalIntent: { detected: true, type: 'CANCEL', startIndex: 0 },
+  forcedContinuity: {
+    detected: false,
+    freeTrial: [],
+    paidAfterTrial: [],
+    autoRenewal: []
+  },
+  confirmShaming: [],
+  urgencySignals: [],
+  scarcitySignals: [],
+  obstructionDetected: false,
+  unclearChoiceDetected: false,
+  repeatedRetentionDetected: false
+}
+BEHAVIOR RESULT: {
+  riskScore: 85,
+  overallSeverity: 'HIGH',
+  summary: {
+    title: 'High Risk Behavior',
+    message: 'Multiple behavioral signals were detected that may make the requested action difficult or encourage you to change your decision.'
+  },
+  summaryText: 'Multiple behavioral signals were detected that may make the requested action difficult or encourage you to change your decision.',
+  whatHappened: 'You started a subscription cancellation and encountered a retention offer and an additional survey before reaching confirmation.',
+  whyThisMatters: 'Multiple friction and persuasion signals were detected during the interaction.',
+  intent: {
+    detected: true,
+    type: 'CANCEL',
+    startIndex: 0,
+    cancellationDetected: true,
+    cancellationStartIndex: 0
+  },
+  behaviors: [
+    {
+      type: 'EXCESSIVE_STEPS',
+      category: 'OBSTRUCTION',
+      title: 'Excessive Steps',
+      severity: 'HIGH',
+      explanation: 'Several additional actions were required after you started cancellation.',
+      evidence: '7 meaningful actions were required after cancellation was initiated.',
+      whyItMatters: 'Extra steps can make an intended action harder to complete.',
+      evidenceEvents: [Array]
+    },
+    {
+      type: 'RETENTION_INTERFERENCE',
+      category: 'PERSUASION',
+      title: 'Retention Offer',
+      severity: 'MEDIUM',
+      explanation: 'A promotional offer appeared after you started cancellation.',
+      evidence: '1 retention offer appeared after cancellation was initiated.',
+      whyItMatters: 'This may encourage you to stay instead of completing your original action.',
+      evidenceEvents: [Array]
+    },
+    {
+      type: 'FORCED_ACTION',
+      category: 'OBSTRUCTION',
+      title: 'Forced Action',
+      severity: 'HIGH',
+      explanation: 'A survey or additional action appeared before you could complete cancellation.',
+      evidence: 'A cancellation survey was encountered before final cancellation.',
+      whyItMatters: 'This adds an additional step between your decision and completing the requested action.',
+      evidenceEvents: [Array]
+    },
+    {
+      type: 'DIFFICULT_CANCELLATION',
+      category: 'OBSTRUCTION',
+      title: 'Difficult Cancellation',
+      severity: 'HIGH',
+      explanation: 'Multiple friction signals were detected during the cancellation process.',
+      evidence: '7 cancellation steps + 1 retention offer + survey detected.',
+      whyItMatters: 'The website may be making cancellation more difficult than necessary.',
+      evidenceEvents: [Array]
+    }
+  ],
+  features: {
+    totalSteps: 7,
+    actionTypes: [
+      'CANCEL',
+      'RETENTION',
+      'DECLINE',
+      'OTHER',
+      'OTHER',
+      'CANCEL',
+      'CONFIRM'
+    ],
+    cancellationSteps: 7,
+    repeatedPromptCount: 0,
+    retentionInterference: { detected: true, count: 1 },
+    forcedActionDetected: true,
+    forcedActionType: 'RETENTION_OFFER',
+    meaningfulBacktracking: 0,
+    cancellationDetected: true,
+    generalIntent: { detected: true, type: 'CANCEL', startIndex: 0 },
+    forcedContinuity: {
+      detected: false,
+      freeTrial: [],
+      paidAfterTrial: [],
+      autoRenewal: []
+    },
+    confirmShaming: [],
+    urgencySignals: [],
+    scarcitySignals: [],
+    obstructionDetected: false,
+    unclearChoiceDetected: false,
+    repeatedRetentionDetected: false
+  },
+  dataset_matches: [
+    {
+      type: 'EXCESSIVE_STEPS',
+      dataset_category: 'Obstruction',
+      matched_pattern_type: 'Hard to Cancel',
+      matched_pattern_string: 'Hard to Cancel',
+      confidence: 0.7568,
+      description: "Multiple friction signals in cancellation flow match obstruction patterns like 'Hard to Cancel'.",
+      source: 'Princeton Dark Patterns at Scale',
+      reference_only: true
+    },
+    {
+      type: 'FORCED_ACTION',
+      dataset_category: 'Forced Action',
+      matched_pattern_type: 'Forced Enrollment',
+      matched_pattern_string: 'Forced Enrollment',
+      confidence: 0.7735,
+      description: 'Forced actions detected (e.g., surveys before cancellation) match forced-action and obstruction patterns.',
+      source: 'Princeton Dark Patterns at Scale',
+      reference_only: true
+    },
+    {
+      type: 'FORCED_ACTION',
+      dataset_category: 'Forced Action',
+      matched_pattern_type: 'Sneak into Basket',
+      matched_pattern_string: 'Sneak into Basket',
+      confidence: 0.7,
+      description: 'Forced actions detected (e.g., surveys before cancellation) match forced-action and obstruction patterns.',
+      source: 'Princeton Dark Patterns at Scale',
+      reference_only: true
+    },
+    {
+      type: 'FORCED_ACTION',
+      dataset_category: 'Obstruction',
+      matched_pattern_type: 'Forced Enrollment',
+      matched_pattern_string: 'Forced Enrollment',
+      confidence: 0.6535,
+      description: 'Forced actions detected (e.g., surveys before cancellation) match forced-action and obstruction patterns.',
+      source: 'Princeton Dark Patterns at Scale',
+      reference_only: true
+    },
+    {
+      type: 'RETENTION_INTERFERENCE',
+      dataset_category: 'Urgency',
+      matched_pattern_type: 'Pressured Selling',
+      matched_pattern_string: 'Pressured Selling',
+      confidence: 0.6723999999999999,
+      description: 'Retention offers appearing after cancellation intent often use urgency/scarcity pressure or misdirection.',
+      source: 'Princeton Dark Patterns at Scale',
+      reference_only: true
+    },
+    {
+      type: 'RETENTION_INTERFERENCE',
+      dataset_category: 'Urgency',
+      matched_pattern_type: 'Limited-time Message',
+      matched_pattern_string: 'Limited-time Message',
+      confidence: 0.7,
+      description: 'Retention offers appearing after cancellation intent often use urgency/scarcity pressure or misdirection.',
+      source: 'Princeton Dark Patterns at Scale',
+      reference_only: true
+    },
+    {
+      type: 'RETENTION_INTERFERENCE',
+      dataset_category: 'Misdirection',
+      matched_pattern_type: 'Pressured Selling',
+      matched_pattern_string: 'Pressured Selling',
+      confidence: 0.65,
+      description: 'Retention offers appearing after cancellation intent often use urgency/scarcity pressure or misdirection.',
+      source: 'Princeton Dark Patterns at Scale',
+      reference_only: true
+    },
+    {
+      type: 'DIFFICULT_CANCELLATION',
+      dataset_category: 'Obstruction',
+      matched_pattern_type: 'Hard to Cancel',
+      matched_pattern_string: 'Hard to Cancel',
+      confidence: 0.792,
+      description: "Multiple friction signals in cancellation pathway directly align with the 'Hard to Cancel' obstruction pattern.",
+      source: 'Princeton Dark Patterns at Scale',
+      reference_only: true
+    }
+  ],
+  evidence: [
+    { behavior: 'EXCESSIVE_STEPS', events: [Array] },
+    { behavior: 'RETENTION_INTERFERENCE', events: [Array] },
+    { behavior: 'FORCED_ACTION', events: [Array] },
+    { behavior: 'DIFFICULT_CANCELLATION', events: [Array] }
+  ]
+}
+Core Analysis Results:
+{
+  "riskScore": 85,
+  "overallSeverity": "HIGH",
+  "summary": {
+    "title": "High Risk Behavior",
+    "message": "Multiple behavioral signals were detected that may make the requested action difficult or encourage you to change your decision."
+  },
+  "whatHappened": "You started a subscription cancellation and encountered a retention offer and an additional survey before reaching confirmation.",
+  "whyThisMatters": "Multiple friction and persuasion signals were detected during the interaction."
+}
+
+Detected Behaviors:
+  - EXCESSIVE_STEPS: undefined
+  - RETENTION_INTERFERENCE: undefined
+  - FORCED_ACTION: undefined
+  - DIFFICULT_CANCELLATION: undefined
+
+Dataset Matches (Princeton Reference):
+  [1] EXCESSIVE_STEPS ΓåÆ Hard to Cancel
+      Confidence: 0.7568
+      Category: Obstruction
+      Explanation: Your observed excessive steps contains signals related to the "Hard to Cancel" pattern category documented in the Princeton reference dataset. This comparison is informational and based on behavioral feature analysis.
+  [2] FORCED_ACTION ΓåÆ Forced Enrollment
+      Confidence: 0.7735
+      Category: Forced Action
+      Explanation: Your observed forced action contains signals related to the "Forced Enrollment" pattern category documented in the Princeton reference dataset. This comparison is informational and based on behavioral feature analysis.
+  [3] FORCED_ACTION ΓåÆ Sneak into Basket
+      Confidence: 0.7
+      Category: Forced Action
+      Explanation: Your observed forced action contains signals related to the "Sneak into Basket" pattern category documented in the Princeton reference dataset. This comparison is informational and based on behavioral feature analysis.
+  [4] FORCED_ACTION ΓåÆ Forced Enrollment
+      Confidence: 0.6535
+      Category: Obstruction
+      Explanation: Your observed forced action contains signals related to the "Forced Enrollment" pattern category documented in the Princeton reference dataset. This comparison is informational and based on behavioral feature analysis.
+  [5] RETENTION_INTERFERENCE ΓåÆ Pressured Selling
+      Confidence: 0.6723999999999999
+      Category: Urgency
+      Explanation: Your observed retention interference contains signals related to the "Pressured Selling" pattern category documented in the Princeton reference dataset. This comparison is informational and based on behavioral feature analysis.
+  [6] RETENTION_INTERFERENCE ΓåÆ Limited-time Message
+      Confidence: 0.7
+      Category: Urgency
+      Explanation: Your observed retention interference contains signals related to the "Limited-time Message" pattern category documented in the Princeton reference dataset. This comparison is informational and based on behavioral feature analysis.
+  [7] RETENTION_INTERFERENCE ΓåÆ Pressured Selling
+      Confidence: 0.65
+      Category: Misdirection
+      Explanation: Your observed retention interference contains signals related to the "Pressured Selling" pattern category documented in the Princeton reference dataset. This comparison is informational and based on behavioral feature analysis.
+  [8] DIFFICULT_CANCELLATION ΓåÆ Hard to Cancel
+      Confidence: 0.792
+      Category: Obstruction
+      Explanation: Your observed difficult cancellation contains signals related to the "Hard to Cancel" pattern category documented in the Princeton reference dataset. This comparison is informational and based on behavioral feature analysis.
+
+Features:
+{
+  "totalSteps": 7,
+  "actionTypes": [
+    "CANCEL",
+    "RETENTION",
+    "DECLINE",
+    "OTHER",
+    "OTHER",
+    "CANCEL",
+    "CONFIRM"
+  ],
+  "cancellationSteps": 7,
+  "repeatedPromptCount": 0,
+  "retentionInterference": {
+    "detected": true,
+    "count": 1
+  },
+  "forcedActionDetected": true,
+  "forcedActionType": "RETENTION_OFFER",
+  "meaningfulBacktracking": 0,
+  "cancellationDetected": true,
+  "generalIntent": {
+    "detected": true,
+    "type": "CANCEL",
+    "startIndex": 0
+  },
+  "forcedContinuity": {
+    "detected": false,
+    "freeTrial": [],
+    "paidAfterTrial": [],
+    "autoRenewal": []
+  },
+  "confirmShaming": [],
+  "urgencySignals": [],
+  "scarcitySignals": [],
+  "obstructionDetected": false,
+  "unclearChoiceDetected": false,
+  "repeatedRetentionDetected": false
+}
+
+==============================
+7. BACKTRACKING
+==============================
+BEHAVIOR FEATURES: {
+  totalSteps: 7,
+  actionTypes: [
+    'OTHER',
+    'CANCEL',
+    'RETENTION',
+    'CANCEL',
+    'RETENTION',
+    'CANCEL',
+    'CONFIRM'
+  ],
+  cancellationSteps: 6,
+  repeatedPromptCount: 2,
+  retentionInterference: { detected: true, count: 2 },
+  forcedActionDetected: false,
+  forcedActionType: null,
+  meaningfulBacktracking: 3,
+  cancellationDetected: true,
+  generalIntent: { detected: true, type: 'CANCEL', startIndex: 2 },
+  forcedContinuity: {
+    detected: false,
+    freeTrial: [],
+    paidAfterTrial: [],
+    autoRenewal: []
+  },
+  confirmShaming: [],
+  urgencySignals: [],
+  scarcitySignals: [],
+  obstructionDetected: true,
+  unclearChoiceDetected: false,
+  repeatedRetentionDetected: true
+}
+BEHAVIOR RESULT: {
+  riskScore: 95,
+  overallSeverity: 'HIGH',
+  summary: {
+    title: 'High Risk Behavior',
+    message: 'Multiple behavioral signals were detected that may make the requested action difficult or encourage you to change your decision.'
+  },
+  summaryText: 'Multiple behavioral signals were detected that may make the requested action difficult or encourage you to change your decision.',
+  whatHappened: 'You started a subscription cancellation and encountered a retention offer and returned to earlier cancellation stages before reaching confirmation.',
+  whyThisMatters: 'Multiple friction and persuasion signals were detected during the interaction.',
+  intent: {
+    detected: true,
+    type: 'CANCEL',
+    startIndex: 2,
+    cancellationDetected: true,
+    cancellationStartIndex: 2
+  },
+  behaviors: [
+    {
+      type: 'REPEATED_PROMPTS',
+      category: 'OTHER',
+      title: 'Repeated Prompts',
+      severity: 'MEDIUM',
+      explanation: 'The website presented multiple prompts or retention messages during your cancellation attempt.',
+      evidence: '2 cancellation or retention prompts were encountered.',
+      whyItMatters: 'Repeated prompts may pressure you to reconsider or make the intended action harder to complete.',
+      evidenceEvents: [Array]
+    },
+    {
+      type: 'RETENTION_INTERFERENCE',
+      category: 'PERSUASION',
+      title: 'Retention Offer',
+      severity: 'MEDIUM',
+      explanation: 'A promotional offer appeared after you started cancellation.',
+      evidence: '2 retention offers appeared after cancellation was initiated.',
+      whyItMatters: 'This may encourage you to stay instead of completing your original action.',
+      evidenceEvents: [Array]
+    },
+    {
+      type: 'BACKTRACKING',
+      category: 'OBSTRUCTION',
+      title: 'Repeated Navigation',
+      severity: 'HIGH',
+      explanation: 'The cancellation flow returned to earlier stages instead of progressing directly.',
+      evidence: 'Earlier cancellation stages were revisited.',
+      whyItMatters: 'Returning to earlier stages can make the process longer and harder to complete.',
+      evidenceEvents: [Array]
+    },
+    {
+      type: 'OBSTRUCTION',
+      category: 'OBSTRUCTION',
+      title: 'Obstructed Action',
+      severity: 'MEDIUM',
+      explanation: 'The requested action required several additional steps before completion.',
+      evidence: '5 meaningful steps followed the detected intent.',
+      whyItMatters: 'Extra friction can make it harder to complete the action you intended.',
+      evidenceEvents: [Array]
+    },
+    {
+      type: 'REPEATED_RETENTION',
+      category: 'PERSUASION',
+      title: 'Repeated Retention Offers',
+      severity: 'HIGH',
+      explanation: 'Multiple retention offers appeared after cancellation was initiated.',
+      evidence: '2 retention attempts occurred during cancellation.',
+      whyItMatters: 'Repeated offers can make the requested action harder to complete.',
+      evidenceEvents: [Array]
+    },
+    {
+      type: 'DIFFICULT_CANCELLATION',
+      category: 'OBSTRUCTION',
+      title: 'Difficult Cancellation',
+      severity: 'HIGH',
+      explanation: 'Multiple friction signals were detected during the cancellation process.',
+      evidence: '6 cancellation steps + 2 retention offers + 2 repeated prompts + 3 route reversals detected.',
+      whyItMatters: 'The website may be making cancellation more difficult than necessary.',
+      evidenceEvents: [Array]
+    }
+  ],
+  features: {
+    totalSteps: 7,
+    actionTypes: [
+      'OTHER',
+      'CANCEL',
+      'RETENTION',
+      'CANCEL',
+      'RETENTION',
+      'CANCEL',
+      'CONFIRM'
+    ],
+    cancellationSteps: 6,
+    repeatedPromptCount: 2,
+    retentionInterference: { detected: true, count: 2 },
+    forcedActionDetected: false,
+    forcedActionType: null,
+    meaningfulBacktracking: 3,
+    cancellationDetected: true,
+    generalIntent: { detected: true, type: 'CANCEL', startIndex: 2 },
+    forcedContinuity: {
+      detected: false,
+      freeTrial: [],
+      paidAfterTrial: [],
+      autoRenewal: []
+    },
+    confirmShaming: [],
+    urgencySignals: [],
+    scarcitySignals: [],
+    obstructionDetected: true,
+    unclearChoiceDetected: false,
+    repeatedRetentionDetected: true
+  },
+  dataset_matches: [
+    {
+      type: 'REPEATED_PROMPTS',
+      dataset_category: 'Misdirection',
+      matched_pattern_type: 'Pressured Selling',
+      matched_pattern_string: 'Pressured Selling',
+      confidence: 0.6240000000000001,
+      description: 'Repeated persuasive prompts align with patterns designed to pressure or redirect user attention.',
+      source: 'Princeton Dark Patterns at Scale',
+      reference_only: true
+    },
+    {
+      type: 'REPEATED_PROMPTS',
+      dataset_category: 'Misdirection',
+      matched_pattern_type: 'High-demand Message',
+      matched_pattern_string: 'High-demand Message',
+      confidence: 0.7,
+      description: 'Repeated persuasive prompts align with patterns designed to pressure or redirect user attention.',
+      source: 'Princeton Dark Patterns at Scale',
+      reference_only: true
+    },
+    {
+      type: 'REPEATED_PROMPTS',
+      dataset_category: 'Urgency',
+      matched_pattern_type: 'Pressured Selling',
+      matched_pattern_string: 'Pressured Selling',
+      confidence: 0.65,
+      description: 'Repeated persuasive prompts align with patterns designed to pressure or redirect user attention.',
+      source: 'Princeton Dark Patterns at Scale',
+      reference_only: true
+    },
+    {
+      type: 'RETENTION_INTERFERENCE',
+      dataset_category: 'Urgency',
+      matched_pattern_type: 'Pressured Selling',
+      matched_pattern_string: 'Pressured Selling',
+      confidence: 0.7707999999999999,
+      description: 'Retention offers appearing after cancellation intent often use urgency/scarcity pressure or misdirection.',
+      source: 'Princeton Dark Patterns at Scale',
+      reference_only: true
+    },
+    {
+      type: 'RETENTION_INTERFERENCE',
+      dataset_category: 'Urgency',
+      matched_pattern_type: 'Limited-time Message',
+      matched_pattern_string: 'Limited-time Message',
+      confidence: 0.7,
+      description: 'Retention offers appearing after cancellation intent often use urgency/scarcity pressure or misdirection.',
+      source: 'Princeton Dark Patterns at Scale',
+      reference_only: true
+    },
+    {
+      type: 'RETENTION_INTERFERENCE',
+      dataset_category: 'Misdirection',
+      matched_pattern_type: 'Pressured Selling',
+      matched_pattern_string: 'Pressured Selling',
+      confidence: 0.6507999999999999,
+      description: 'Retention offers appearing after cancellation intent often use urgency/scarcity pressure or misdirection.',
+      source: 'Princeton Dark Patterns at Scale',
+      reference_only: true
+    },
+    {
+      type: 'DIFFICULT_CANCELLATION',
+      dataset_category: 'Obstruction',
+      matched_pattern_type: 'Hard to Cancel',
+      matched_pattern_string: 'Hard to Cancel',
+      confidence: 0.792,
+      description: "Multiple friction signals in cancellation pathway directly align with the 'Hard to Cancel' obstruction pattern.",
+      source: 'Princeton Dark Patterns at Scale',
+      reference_only: true
+    },
+    {
+      type: 'BACKTRACKING',
+      dataset_category: 'Obstruction',
+      matched_pattern_type: 'Hard to Cancel',
+      matched_pattern_string: 'Hard to Cancel',
+      confidence: 0.675,
+      description: 'Forced navigation loops during cancellation are characteristic of obstruction-based dark patterns.',
+      source: 'Princeton Dark Patterns at Scale',
+      reference_only: true
+    },
+    {
+      type: 'OBSTRUCTION',
+      dataset_category: 'Obstruction',
+      matched_pattern_type: 'Hard to Cancel',
+      matched_pattern_string: 'Hard to Cancel',
+      confidence: 0.7308,
+      description: "Unrelated steps blocking intended account actions match 'Obstruction' category patterns.",
+      source: 'Princeton Dark Patterns at Scale',
+      reference_only: true
+    },
+    {
+      type: 'REPEATED_RETENTION',
+      dataset_category: 'Obstruction',
+      matched_pattern_type: 'Hard to Cancel',
+      matched_pattern_string: 'Hard to Cancel',
+      confidence: 0.748,
+      description: 'Multiple retention offers during single cancellation attempt align with obstruction and friction patterns.',
+      source: 'Princeton Dark Patterns at Scale',
+      reference_only: true
+    },
+    {
+      type: 'REPEATED_RETENTION',
+      dataset_category: 'Misdirection',
+      matched_pattern_type: 'Hard to Cancel',
+      matched_pattern_string: 'Hard to Cancel',
+      confidence: 0.65,
+      description: 'Multiple retention offers during single cancellation attempt align with obstruction and friction patterns.',
+      source: 'Princeton Dark Patterns at Scale',
+      reference_only: true
+    }
+  ],
+  evidence: [
+    { behavior: 'REPEATED_PROMPTS', events: [Array] },
+    { behavior: 'RETENTION_INTERFERENCE', events: [Array] },
+    { behavior: 'BACKTRACKING', events: [Array] },
+    { behavior: 'OBSTRUCTION', events: [Array] },
+    { behavior: 'REPEATED_RETENTION', events: [Array] },
+    { behavior: 'DIFFICULT_CANCELLATION', events: [Array] }
+  ]
+}
+Core Analysis Results:
+{
+  "riskScore": 95,
+  "overallSeverity": "HIGH",
+  "summary": {
+    "title": "High Risk Behavior",
+    "message": "Multiple behavioral signals were detected that may make the requested action difficult or encourage you to change your decision."
+  },
+  "whatHappened": "You started a subscription cancellation and encountered a retention offer and returned to earlier cancellation stages before reaching confirmation.",
+  "whyThisMatters": "Multiple friction and persuasion signals were detected during the interaction."
+}
+
+Detected Behaviors:
+  - REPEATED_PROMPTS: undefined
+  - RETENTION_INTERFERENCE: undefined
+  - BACKTRACKING: undefined
+  - OBSTRUCTION: undefined
+  - REPEATED_RETENTION: undefined
+  - DIFFICULT_CANCELLATION: undefined
+
+Dataset Matches (Princeton Reference):
+  [1] REPEATED_PROMPTS ΓåÆ Pressured Selling
+      Confidence: 0.6240000000000001
+      Category: Misdirection
+      Explanation: Your observed repeated prompts contains signals related to the "Pressured Selling" pattern category documented in the Princeton reference dataset. This comparison is informational and based on behavioral feature analysis.
+  [2] REPEATED_PROMPTS ΓåÆ High-demand Message
+      Confidence: 0.7
+      Category: Misdirection
+      Explanation: Your observed repeated prompts contains signals related to the "High-demand Message" pattern category documented in the Princeton reference dataset. This comparison is informational and based on behavioral feature analysis.
+  [3] REPEATED_PROMPTS ΓåÆ Pressured Selling
+      Confidence: 0.65
+      Category: Urgency
+      Explanation: Your observed repeated prompts contains signals related to the "Pressured Selling" pattern category documented in the Princeton reference dataset. This comparison is informational and based on behavioral feature analysis.
+  [4] RETENTION_INTERFERENCE ΓåÆ Pressured Selling
+      Confidence: 0.7707999999999999
+      Category: Urgency
+      Explanation: Your observed retention interference contains signals related to the "Pressured Selling" pattern category documented in the Princeton reference dataset. This comparison is informational and based on behavioral feature analysis.
+  [5] RETENTION_INTERFERENCE ΓåÆ Limited-time Message
+      Confidence: 0.7
+      Category: Urgency
+      Explanation: Your observed retention interference contains signals related to the "Limited-time Message" pattern category documented in the Princeton reference dataset. This comparison is informational and based on behavioral feature analysis.
+  [6] RETENTION_INTERFERENCE ΓåÆ Pressured Selling
+      Confidence: 0.6507999999999999
+      Category: Misdirection
+      Explanation: Your observed retention interference contains signals related to the "Pressured Selling" pattern category documented in the Princeton reference dataset. This comparison is informational and based on behavioral feature analysis.
+  [7] DIFFICULT_CANCELLATION ΓåÆ Hard to Cancel
+      Confidence: 0.792
+      Category: Obstruction
+      Explanation: Your observed difficult cancellation contains signals related to the "Hard to Cancel" pattern category documented in the Princeton reference dataset. This comparison is informational and based on behavioral feature analysis.
+  [8] BACKTRACKING ΓåÆ Hard to Cancel
+      Confidence: 0.675
+      Category: Obstruction
+      Explanation: Your observed backtracking contains signals related to the "Hard to Cancel" pattern category documented in the Princeton reference dataset. This comparison is informational and based on behavioral feature analysis.
+  [9] OBSTRUCTION ΓåÆ Hard to Cancel
+      Confidence: 0.7308
+      Category: Obstruction
+      Explanation: Your observed obstruction contains signals related to the "Hard to Cancel" pattern category documented in the Princeton reference dataset. This comparison is informational and based on behavioral feature analysis.
+  [10] REPEATED_RETENTION ΓåÆ Hard to Cancel
+      Confidence: 0.748
+      Category: Obstruction
+      Explanation: Your observed repeated retention contains signals related to the "Hard to Cancel" pattern category documented in the Princeton reference dataset. This comparison is informational and based on behavioral feature analysis.
+  [11] REPEATED_RETENTION ΓåÆ Hard to Cancel
+      Confidence: 0.65
+      Category: Misdirection
+      Explanation: Your observed repeated retention contains signals related to the "Hard to Cancel" pattern category documented in the Princeton reference dataset. This comparison is informational and based on behavioral feature analysis.
+
+Features:
+{
+  "totalSteps": 7,
+  "actionTypes": [
+    "OTHER",
+    "CANCEL",
+    "RETENTION",
+    "CANCEL",
+    "RETENTION",
+    "CANCEL",
+    "CONFIRM"
+  ],
+  "cancellationSteps": 6,
+  "repeatedPromptCount": 2,
+  "retentionInterference": {
+    "detected": true,
+    "count": 2
+  },
+  "forcedActionDetected": false,
+  "forcedActionType": null,
+  "meaningfulBacktracking": 3,
+  "cancellationDetected": true,
+  "generalIntent": {
+    "detected": true,
+    "type": "CANCEL",
+    "startIndex": 2
+  },
+  "forcedContinuity": {
+    "detected": false,
+    "freeTrial": [],
+    "paidAfterTrial": [],
+    "autoRenewal": []
+  },
+  "confirmShaming": [],
+  "urgencySignals": [],
+  "scarcitySignals": [],
+  "obstructionDetected": true,
+  "unclearChoiceDetected": false,
+  "repeatedRetentionDetected": true
+}
+
+==============================
+8. CONFIRM SHAMING
+==============================
+BEHAVIOR FEATURES: {
+  totalSteps: 3,
+  actionTypes: [ 'CANCEL', 'RETENTION', 'CONFIRM' ],
+  cancellationSteps: 3,
+  repeatedPromptCount: 0,
+  retentionInterference: { detected: true, count: 1 },
+  forcedActionDetected: false,
+  forcedActionType: null,
+  meaningfulBacktracking: 0,
+  cancellationDetected: true,
+  generalIntent: { detected: true, type: 'CANCEL', startIndex: 0 },
+  forcedContinuity: {
+    detected: false,
+    freeTrial: [],
+    paidAfterTrial: [],
+    autoRenewal: []
+  },
+  confirmShaming: [],
+  urgencySignals: [],
+  scarcitySignals: [],
+  obstructionDetected: false,
+  unclearChoiceDetected: false,
+  repeatedRetentionDetected: false
+}
+BEHAVIOR RESULT: {
+  riskScore: 15,
+  overallSeverity: 'LOW',
+  summary: {
+    title: 'Low Risk',
+    message: 'No significant behavioral manipulation signals were detected.'
+  },
+  summaryText: 'No significant behavioral manipulation signals were detected.',
+  whatHappened: 'You started a subscription cancellation and encountered a retention offer before reaching confirmation.',
+  whyThisMatters: 'Normal navigation was detected without significant behavioral friction.',
+  intent: {
+    detected: true,
+    type: 'CANCEL',
+    startIndex: 0,
+    cancellationDetected: true,
+    cancellationStartIndex: 0
+  },
+  behaviors: [
+    {
+      type: 'RETENTION_INTERFERENCE',
+      category: 'PERSUASION',
+      title: 'Retention Offer',
+      severity: 'MEDIUM',
+      explanation: 'A promotional offer appeared after you started cancellation.',
+      evidence: '1 retention offer appeared after cancellation was initiated.',
+      whyItMatters: 'This may encourage you to stay instead of completing your original action.',
+      evidenceEvents: [Array]
+    }
+  ],
+  features: {
+    totalSteps: 3,
+    actionTypes: [ 'CANCEL', 'RETENTION', 'CONFIRM' ],
+    cancellationSteps: 3,
+    repeatedPromptCount: 0,
+    retentionInterference: { detected: true, count: 1 },
+    forcedActionDetected: false,
+    forcedActionType: null,
+    meaningfulBacktracking: 0,
+    cancellationDetected: true,
+    generalIntent: { detected: true, type: 'CANCEL', startIndex: 0 },
+    forcedContinuity: {
+      detected: false,
+      freeTrial: [],
+      paidAfterTrial: [],
+      autoRenewal: []
+    },
+    confirmShaming: [],
+    urgencySignals: [],
+    scarcitySignals: [],
+    obstructionDetected: false,
+    unclearChoiceDetected: false,
+    repeatedRetentionDetected: false
+  },
+  dataset_matches: [
+    {
+      type: 'RETENTION_INTERFERENCE',
+      dataset_category: 'Urgency',
+      matched_pattern_type: 'Pressured Selling',
+      matched_pattern_string: 'Pressured Selling',
+      confidence: 0.6723999999999999,
+      description: 'Retention offers appearing after cancellation intent often use urgency/scarcity pressure or misdirection.',
+      source: 'Princeton Dark Patterns at Scale',
+      reference_only: true
+    },
+    {
+      type: 'RETENTION_INTERFERENCE',
+      dataset_category: 'Urgency',
+      matched_pattern_type: 'Limited-time Message',
+      matched_pattern_string: 'Limited-time Message',
+      confidence: 0.7,
+      description: 'Retention offers appearing after cancellation intent often use urgency/scarcity pressure or misdirection.',
+      source: 'Princeton Dark Patterns at Scale',
+      reference_only: true
+    },
+    {
+      type: 'RETENTION_INTERFERENCE',
+      dataset_category: 'Misdirection',
+      matched_pattern_type: 'Pressured Selling',
+      matched_pattern_string: 'Pressured Selling',
+      confidence: 0.65,
+      description: 'Retention offers appearing after cancellation intent often use urgency/scarcity pressure or misdirection.',
+      source: 'Princeton Dark Patterns at Scale',
+      reference_only: true
+    }
+  ],
+  evidence: [ { behavior: 'RETENTION_INTERFERENCE', events: [Array] } ]
+}
+Core Analysis Results:
+{
+  "riskScore": 15,
+  "overallSeverity": "LOW",
+  "summary": {
+    "title": "Low Risk",
+    "message": "No significant behavioral manipulation signals were detected."
+  },
+  "whatHappened": "You started a subscription cancellation and encountered a retention offer before reaching confirmation.",
+  "whyThisMatters": "Normal navigation was detected without significant behavioral friction."
+}
+
+Detected Behaviors:
+  - RETENTION_INTERFERENCE: undefined
+
+Dataset Matches (Princeton Reference):
+  [1] RETENTION_INTERFERENCE ΓåÆ Pressured Selling
+      Confidence: 0.6723999999999999
+      Category: Urgency
+      Explanation: Your observed retention interference contains signals related to the "Pressured Selling" pattern category documented in the Princeton reference dataset. This comparison is informational and based on behavioral feature analysis.
+  [2] RETENTION_INTERFERENCE ΓåÆ Limited-time Message
+      Confidence: 0.7
+      Category: Urgency
+      Explanation: Your observed retention interference contains signals related to the "Limited-time Message" pattern category documented in the Princeton reference dataset. This comparison is informational and based on behavioral feature analysis.
+  [3] RETENTION_INTERFERENCE ΓåÆ Pressured Selling
+      Confidence: 0.65
+      Category: Misdirection
+      Explanation: Your observed retention interference contains signals related to the "Pressured Selling" pattern category documented in the Princeton reference dataset. This comparison is informational and based on behavioral feature analysis.
+
+Features:
+{
+  "totalSteps": 3,
+  "actionTypes": [
+    "CANCEL",
+    "RETENTION",
+    "CONFIRM"
+  ],
+  "cancellationSteps": 3,
+  "repeatedPromptCount": 0,
+  "retentionInterference": {
+    "detected": true,
+    "count": 1
+  },
+  "forcedActionDetected": false,
+  "forcedActionType": null,
+  "meaningfulBacktracking": 0,
+  "cancellationDetected": true,
+  "generalIntent": {
+    "detected": true,
+    "type": "CANCEL",
+    "startIndex": 0
+  },
+  "forcedContinuity": {
+    "detected": false,
+    "freeTrial": [],
+    "paidAfterTrial": [],
+    "autoRenewal": []
+  },
+  "confirmShaming": [],
+  "urgencySignals": [],
+  "scarcitySignals": [],
+  "obstructionDetected": false,
+  "unclearChoiceDetected": false,
+  "repeatedRetentionDetected": false
+}
+
+==============================
+9. URGENCY PRESSURE
+==============================
+BEHAVIOR FEATURES: {
+  totalSteps: 4,
+  actionTypes: [ 'OTHER', 'OTHER', 'RETENTION', 'PURCHASE' ],
+  cancellationSteps: 0,
+  repeatedPromptCount: 0,
+  retentionInterference: { detected: false, count: 0 },
+  forcedActionDetected: false,
+  forcedActionType: null,
+  meaningfulBacktracking: 0,
+  cancellationDetected: false,
+  generalIntent: { detected: true, type: 'PURCHASE', startIndex: 6 },
+  forcedContinuity: {
+    detected: false,
+    freeTrial: [],
+    paidAfterTrial: [],
+    autoRenewal: []
+  },
+  confirmShaming: [],
+  urgencySignals: [ 'Only 10 minutes left!' ],
+  scarcitySignals: [],
+  obstructionDetected: false,
+  unclearChoiceDetected: false,
+  repeatedRetentionDetected: false
+}
+BEHAVIOR RESULT: {
+  riskScore: 10,
+  overallSeverity: 'LOW',
+  summary: {
+    title: 'Low Risk',
+    message: 'No significant behavioral manipulation signals were detected.'
+  },
+  summaryText: 'No significant behavioral manipulation signals were detected.',
+  whatHappened: 'You encountered time-sensitive or limited-availability messaging during the interaction.',
+  whyThisMatters: 'Normal navigation was detected without significant behavioral friction.',
+  intent: {
+    detected: true,
+    type: 'PURCHASE',
+    startIndex: 6,
+    cancellationDetected: false,
+    cancellationStartIndex: -1
+  },
+  behaviors: [
+    {
+      type: 'URGENCY_PRESSURE',
+      category: 'PERSUASION',
+      title: 'Urgency Pressure',
+      severity: 'MEDIUM',
+      explanation: 'The website used time-sensitive language to encourage a quick decision.',
+      evidence: 'Potential urgency pressure: Only 10 minutes left!',
+      whyItMatters: 'Urgency can pressure users to act before evaluating the decision carefully.',
+      evidenceEvents: [Array]
+    }
+  ],
+  features: {
+    totalSteps: 4,
+    actionTypes: [ 'OTHER', 'OTHER', 'RETENTION', 'PURCHASE' ],
+    cancellationSteps: 0,
+    repeatedPromptCount: 0,
+    retentionInterference: { detected: false, count: 0 },
+    forcedActionDetected: false,
+    forcedActionType: null,
+    meaningfulBacktracking: 0,
+    cancellationDetected: false,
+    generalIntent: { detected: true, type: 'PURCHASE', startIndex: 6 },
+    forcedContinuity: {
+      detected: false,
+      freeTrial: [],
+      paidAfterTrial: [],
+      autoRenewal: []
+    },
+    confirmShaming: [],
+    urgencySignals: [ 'Only 10 minutes left!' ],
+    scarcitySignals: [],
+    obstructionDetected: false,
+    unclearChoiceDetected: false,
+    repeatedRetentionDetected: false
+  },
+  dataset_matches: [
+    {
+      type: 'URGENCY_PRESSURE',
+      dataset_category: 'Urgency',
+      matched_pattern_type: 'Countdown Timer',
+      matched_pattern_string: 'Countdown Timer',
+      confidence: 0.664,
+      description: 'Urgency signals in observed behavior directly correspond to Princeton urgency-based patterns.',
+      source: 'Princeton Dark Patterns at Scale',
+      reference_only: true
+    },
+    {
+      type: 'URGENCY_PRESSURE',
+      dataset_category: 'Urgency',
+      matched_pattern_type: 'Limited-time Message',
+      matched_pattern_string: 'Limited-time Message',
+      confidence: 0.7,
+      description: 'Urgency signals in observed behavior directly correspond to Princeton urgency-based patterns.',
+      source: 'Princeton Dark Patterns at Scale',
+      reference_only: true
+    }
+  ],
+  evidence: [ { behavior: 'URGENCY_PRESSURE', events: [Array] } ]
+}
+Core Analysis Results:
+{
+  "riskScore": 10,
+  "overallSeverity": "LOW",
+  "summary": {
+    "title": "Low Risk",
+    "message": "No significant behavioral manipulation signals were detected."
+  },
+  "whatHappened": "You encountered time-sensitive or limited-availability messaging during the interaction.",
+  "whyThisMatters": "Normal navigation was detected without significant behavioral friction."
+}
+
+Detected Behaviors:
+  - URGENCY_PRESSURE: undefined
+
+Dataset Matches (Princeton Reference):
+  [1] URGENCY_PRESSURE ΓåÆ Countdown Timer
+      Confidence: 0.664
+      Category: Urgency
+      Explanation: Your observed urgency pressure contains signals related to the "Countdown Timer" pattern category documented in the Princeton reference dataset. This comparison is informational and based on behavioral feature analysis.
+  [2] URGENCY_PRESSURE ΓåÆ Limited-time Message
+      Confidence: 0.7
+      Category: Urgency
+      Explanation: Your observed urgency pressure contains signals related to the "Limited-time Message" pattern category documented in the Princeton reference dataset. This comparison is informational and based on behavioral feature analysis.
+
+Features:
+{
+  "totalSteps": 4,
+  "actionTypes": [
+    "OTHER",
+    "OTHER",
+    "RETENTION",
+    "PURCHASE"
+  ],
+  "cancellationSteps": 0,
+  "repeatedPromptCount": 0,
+  "retentionInterference": {
+    "detected": false,
+    "count": 0
+  },
+  "forcedActionDetected": false,
+  "forcedActionType": null,
+  "meaningfulBacktracking": 0,
+  "cancellationDetected": false,
+  "generalIntent": {
+    "detected": true,
+    "type": "PURCHASE",
+    "startIndex": 6
+  },
+  "forcedContinuity": {
+    "detected": false,
+    "freeTrial": [],
+    "paidAfterTrial": [],
+    "autoRenewal": []
+  },
+  "confirmShaming": [],
+  "urgencySignals": [
+    "Only 10 minutes left!"
+  ],
+  "scarcitySignals": [],
+  "obstructionDetected": false,
+  "unclearChoiceDetected": false,
+  "repeatedRetentionDetected": false
+}
+
+==============================
+10. SCARCITY PRESSURE
+==============================
+BEHAVIOR FEATURES: {
+  totalSteps: 4,
+  actionTypes: [ 'OTHER', 'OTHER', 'OTHER', 'PURCHASE' ],
+  cancellationSteps: 0,
+  repeatedPromptCount: 0,
+  retentionInterference: { detected: false, count: 0 },
+  forcedActionDetected: false,
+  forcedActionType: null,
+  meaningfulBacktracking: 0,
+  cancellationDetected: false,
+  generalIntent: { detected: true, type: 'PURCHASE', startIndex: 6 },
+  forcedContinuity: {
+    detected: false,
+    freeTrial: [],
+    paidAfterTrial: [],
+    autoRenewal: []
+  },
+  confirmShaming: [],
+  urgencySignals: [],
+  scarcitySignals: [ 'Last one available', 'Only 2 left in stock' ],
+  obstructionDetected: false,
+  unclearChoiceDetected: false,
+  repeatedRetentionDetected: false
+}
+BEHAVIOR RESULT: {
+  riskScore: 10,
+  overallSeverity: 'LOW',
+  summary: {
+    title: 'Low Risk',
+    message: 'No significant behavioral manipulation signals were detected.'
+  },
+  summaryText: 'No significant behavioral manipulation signals were detected.',
+  whatHappened: 'You encountered time-sensitive or limited-availability messaging during the interaction.',
+  whyThisMatters: 'Normal navigation was detected without significant behavioral friction.',
+  intent: {
+    detected: true,
+    type: 'PURCHASE',
+    startIndex: 6,
+    cancellationDetected: false,
+    cancellationStartIndex: -1
+  },
+  behaviors: [
+    {
+      type: 'SCARCITY_PRESSURE',
+      category: 'PERSUASION',
+      title: 'Scarcity Pressure',
+      severity: 'MEDIUM',
+      explanation: 'The website indicated that availability may be limited.',
+      evidence: 'Potential scarcity pressure: Last one available; Only 2 left in stock',
+      whyItMatters: 'Scarcity messaging can encourage rushed decisions.',
+      evidenceEvents: [Array]
+    }
+  ],
+  features: {
+    totalSteps: 4,
+    actionTypes: [ 'OTHER', 'OTHER', 'OTHER', 'PURCHASE' ],
+    cancellationSteps: 0,
+    repeatedPromptCount: 0,
+    retentionInterference: { detected: false, count: 0 },
+    forcedActionDetected: false,
+    forcedActionType: null,
+    meaningfulBacktracking: 0,
+    cancellationDetected: false,
+    generalIntent: { detected: true, type: 'PURCHASE', startIndex: 6 },
+    forcedContinuity: {
+      detected: false,
+      freeTrial: [],
+      paidAfterTrial: [],
+      autoRenewal: []
+    },
+    confirmShaming: [],
+    urgencySignals: [],
+    scarcitySignals: [ 'Last one available', 'Only 2 left in stock' ],
+    obstructionDetected: false,
+    unclearChoiceDetected: false,
+    repeatedRetentionDetected: false
+  },
+  dataset_matches: [
+    {
+      type: 'SCARCITY_PRESSURE',
+      dataset_category: 'Scarcity',
+      matched_pattern_type: 'Low-stock Message',
+      matched_pattern_string: 'Low-stock Message',
+      confidence: 0.6804,
+      description: 'Scarcity signals detected align with Princeton patterns emphasizing limited availability and time pressure.',
+      source: 'Princeton Dark Patterns at Scale',
+      reference_only: true
+    },
+    {
+      type: 'SCARCITY_PRESSURE',
+      dataset_category: 'Scarcity',
+      matched_pattern_type: 'Limited-time Message',
+      matched_pattern_string: 'Limited-time Message',
+      confidence: 0.7,
+      description: 'Scarcity signals detected align with Princeton patterns emphasizing limited availability and time pressure.',
+      source: 'Princeton Dark Patterns at Scale',
+      reference_only: true
+    },
+    {
+      type: 'SCARCITY_PRESSURE',
+      dataset_category: 'Urgency',
+      matched_pattern_type: 'Low-stock Message',
+      matched_pattern_string: 'Low-stock Message',
+      confidence: 0.65,
+      description: 'Scarcity signals detected align with Princeton patterns emphasizing limited availability and time pressure.',
+      source: 'Princeton Dark Patterns at Scale',
+      reference_only: true
+    }
+  ],
+  evidence: [ { behavior: 'SCARCITY_PRESSURE', events: [Array] } ]
+}
+Core Analysis Results:
+{
+  "riskScore": 10,
+  "overallSeverity": "LOW",
+  "summary": {
+    "title": "Low Risk",
+    "message": "No significant behavioral manipulation signals were detected."
+  },
+  "whatHappened": "You encountered time-sensitive or limited-availability messaging during the interaction.",
+  "whyThisMatters": "Normal navigation was detected without significant behavioral friction."
+}
+
+Detected Behaviors:
+  - SCARCITY_PRESSURE: undefined
+
+Dataset Matches (Princeton Reference):
+  [1] SCARCITY_PRESSURE ΓåÆ Low-stock Message
+      Confidence: 0.6804
+      Category: Scarcity
+      Explanation: Your observed scarcity pressure contains signals related to the "Low-stock Message" pattern category documented in the Princeton reference dataset. This comparison is informational and based on behavioral feature analysis.
+  [2] SCARCITY_PRESSURE ΓåÆ Limited-time Message
+      Confidence: 0.7
+      Category: Scarcity
+      Explanation: Your observed scarcity pressure contains signals related to the "Limited-time Message" pattern category documented in the Princeton reference dataset. This comparison is informational and based on behavioral feature analysis.
+  [3] SCARCITY_PRESSURE ΓåÆ Low-stock Message
+      Confidence: 0.65
+      Category: Urgency
+      Explanation: Your observed scarcity pressure contains signals related to the "Low-stock Message" pattern category documented in the Princeton reference dataset. This comparison is informational and based on behavioral feature analysis.
+
+Features:
+{
+  "totalSteps": 4,
+  "actionTypes": [
+    "OTHER",
+    "OTHER",
+    "OTHER",
+    "PURCHASE"
+  ],
+  "cancellationSteps": 0,
+  "repeatedPromptCount": 0,
+  "retentionInterference": {
+    "detected": false,
+    "count": 0
+  },
+  "forcedActionDetected": false,
+  "forcedActionType": null,
+  "meaningfulBacktracking": 0,
+  "cancellationDetected": false,
+  "generalIntent": {
+    "detected": true,
+    "type": "PURCHASE",
+    "startIndex": 6
+  },
+  "forcedContinuity": {
+    "detected": false,
+    "freeTrial": [],
+    "paidAfterTrial": [],
+    "autoRenewal": []
+  },
+  "confirmShaming": [],
+  "urgencySignals": [],
+  "scarcitySignals": [
+    "Last one available",
+    "Only 2 left in stock"
+  ],
+  "obstructionDetected": false,
+  "unclearChoiceDetected": false,
+  "repeatedRetentionDetected": false
+}
+
+==============================
+11. FORCED CONTINUITY (Free Trial)
+==============================
+BEHAVIOR FEATURES: {
+  totalSteps: 5,
+  actionTypes: [ 'SUBSCRIBE', 'OTHER', 'OTHER', 'OTHER', 'OTHER' ],
+  cancellationSteps: 0,
+  repeatedPromptCount: 0,
+  retentionInterference: { detected: false, count: 0 },
+  forcedActionDetected: false,
+  forcedActionType: null,
+  meaningfulBacktracking: 0,
+  cancellationDetected: false,
+  generalIntent: { detected: true, type: 'SUBSCRIBE', startIndex: 0 },
+  forcedContinuity: {
+    detected: true,
+    freeTrial: [ 'Start Free Trial', '7-day free trial' ],
+    paidAfterTrial: [ 'Γé╣999/month after trial' ],
+    autoRenewal: [ 'Automatically renews' ]
+  },
+  confirmShaming: [],
+  urgencySignals: [],
+  scarcitySignals: [],
+  obstructionDetected: false,
+  unclearChoiceDetected: false,
+  repeatedRetentionDetected: false
+}
+BEHAVIOR RESULT: {
+  riskScore: 25,
+  overallSeverity: 'LOW',
+  summary: {
+    title: 'Low Risk',
+    message: 'No significant behavioral manipulation signals were detected.'
+  },
+  summaryText: 'No significant behavioral manipulation signals were detected.',
+  whatHappened: 'You started a trial and encountered messages about paid renewal or automatic subscription continuation.',
+  whyThisMatters: 'Normal navigation was detected without significant behavioral friction.',
+  intent: {
+    detected: true,
+    type: 'SUBSCRIBE',
+    startIndex: 0,
+    cancellationDetected: false,
+    cancellationStartIndex: -1
+  },
+  behaviors: [
+    {
+      type: 'FORCED_CONTINUITY',
+      category: 'SUBSCRIPTION',
+      title: 'Automatic Renewal',
+      severity: 'HIGH',
+      explanation: 'The trial appears to transition into a paid subscription automatically.',
+      evidence: 'Free trial, paid-after-trial, and renewal messages appeared together.',
+      whyItMatters: 'You may be charged after the trial unless you cancel before renewal.',
+      evidenceEvents: [Array]
+    }
+  ],
+  features: {
+    totalSteps: 5,
+    actionTypes: [ 'SUBSCRIBE', 'OTHER', 'OTHER', 'OTHER', 'OTHER' ],
+    cancellationSteps: 0,
+    repeatedPromptCount: 0,
+    retentionInterference: { detected: false, count: 0 },
+    forcedActionDetected: false,
+    forcedActionType: null,
+    meaningfulBacktracking: 0,
+    cancellationDetected: false,
+    generalIntent: { detected: true, type: 'SUBSCRIBE', startIndex: 0 },
+    forcedContinuity: {
+      detected: true,
+      freeTrial: [Array],
+      paidAfterTrial: [Array],
+      autoRenewal: [Array]
+    },
+    confirmShaming: [],
+    urgencySignals: [],
+    scarcitySignals: [],
+    obstructionDetected: false,
+    unclearChoiceDetected: false,
+    repeatedRetentionDetected: false
+  },
+  dataset_matches: [
+    {
+      type: 'FORCED_CONTINUITY',
+      dataset_category: 'Sneaking',
+      matched_pattern_type: 'Hidden Subscription',
+      matched_pattern_string: 'Hidden Subscription',
+      confidence: 0.7654,
+      description: "Free trial followed by automatic paid enrollment patterns match 'Sneaking' and forced-enrollment patterns.",
+      source: 'Princeton Dark Patterns at Scale',
+      reference_only: true
+    },
+    {
+      type: 'FORCED_CONTINUITY',
+      dataset_category: 'Sneaking',
+      matched_pattern_type: 'Forced Enrollment',
+      matched_pattern_string: 'Forced Enrollment',
+      confidence: 0.7,
+      description: "Free trial followed by automatic paid enrollment patterns match 'Sneaking' and forced-enrollment patterns.",
+      source: 'Princeton Dark Patterns at Scale',
+      reference_only: true
+    }
+  ],
+  evidence: [ { behavior: 'FORCED_CONTINUITY', events: [Array] } ]
+}
+Core Analysis Results:
+{
+  "riskScore": 25,
+  "overallSeverity": "LOW",
+  "summary": {
+    "title": "Low Risk",
+    "message": "No significant behavioral manipulation signals were detected."
+  },
+  "whatHappened": "You started a trial and encountered messages about paid renewal or automatic subscription continuation.",
+  "whyThisMatters": "Normal navigation was detected without significant behavioral friction."
+}
+
+Detected Behaviors:
+  - FORCED_CONTINUITY: undefined
+
+Dataset Matches (Princeton Reference):
+  [1] FORCED_CONTINUITY ΓåÆ Hidden Subscription
+      Confidence: 0.7654
+      Category: Sneaking
+      Explanation: Your observed forced continuity contains signals related to the "Hidden Subscription" pattern category documented in the Princeton reference dataset. This comparison is informational and based on behavioral feature analysis.
+  [2] FORCED_CONTINUITY ΓåÆ Forced Enrollment
+      Confidence: 0.7
+      Category: Sneaking
+      Explanation: Your observed forced continuity contains signals related to the "Forced Enrollment" pattern category documented in the Princeton reference dataset. This comparison is informational and based on behavioral feature analysis.
+
+Features:
+{
+  "totalSteps": 5,
+  "actionTypes": [
+    "SUBSCRIBE",
+    "OTHER",
+    "OTHER",
+    "OTHER",
+    "OTHER"
+  ],
+  "cancellationSteps": 0,
+  "repeatedPromptCount": 0,
+  "retentionInterference": {
+    "detected": false,
+    "count": 0
+  },
+  "forcedActionDetected": false,
+  "forcedActionType": null,
+  "meaningfulBacktracking": 0,
+  "cancellationDetected": false,
+  "generalIntent": {
+    "detected": true,
+    "type": "SUBSCRIBE",
+    "startIndex": 0
+  },
+  "forcedContinuity": {
+    "detected": true,
+    "freeTrial": [
+      "Start Free Trial",
+      "7-day free trial"
+    ],
+    "paidAfterTrial": [
+      "Γé╣999/month after trial"
+    ],
+    "autoRenewal": [
+      "Automatically renews"
+    ]
+  },
+  "confirmShaming": [],
+  "urgencySignals": [],
+  "scarcitySignals": [],
+  "obstructionDetected": false,
+  "unclearChoiceDetected": false,
+  "repeatedRetentionDetected": false
+}
+
+==============================
+12. UNCLEAR CHOICE
+==============================
+BEHAVIOR FEATURES: {
+  totalSteps: 4,
+  actionTypes: [ 'SUBSCRIBE', 'OTHER', 'OTHER', 'DECLINE' ],
+  cancellationSteps: 0,
+  repeatedPromptCount: 0,
+  retentionInterference: { detected: false, count: 0 },
+  forcedActionDetected: false,
+  forcedActionType: null,
+  meaningfulBacktracking: 0,
+  cancellationDetected: false,
+  generalIntent: { detected: true, type: 'SUBSCRIBE', startIndex: 0 },
+  forcedContinuity: {
+    detected: false,
+    freeTrial: [ 'Start Free Trial' ],
+    paidAfterTrial: [],
+    autoRenewal: []
+  },
+  confirmShaming: [],
+  urgencySignals: [],
+  scarcitySignals: [],
+  obstructionDetected: false,
+  unclearChoiceDetected: true,
+  repeatedRetentionDetected: false
+}
+BEHAVIOR RESULT: {
+  riskScore: 10,
+  overallSeverity: 'LOW',
+  summary: {
+    title: 'Low Risk',
+    message: 'No significant behavioral manipulation signals were detected.'
+  },
+  summaryText: 'No significant behavioral manipulation signals were detected.',
+  whatHappened: 'No cancellation flow was detected in the recorded interactions.',
+  whyThisMatters: 'Normal navigation was detected without significant behavioral friction.',
+  intent: {
+    detected: true,
+    type: 'SUBSCRIBE',
+    startIndex: 0,
+    cancellationDetected: false,
+    cancellationStartIndex: -1
+  },
+  behaviors: [
+    {
+      type: 'UNCLEAR_CHOICE',
+      category: 'CHOICE',
+      title: 'Unclear Choice',
+      severity: 'LOW',
+      explanation: 'The alternative to the primary action may be harder to find.',
+      evidence: 'A primary action appeared before the alternative choice.',
+      whyItMatters: 'Users may overlook an alternative because of how choices are presented.',
+      evidenceEvents: [Array]
+    }
+  ],
+  features: {
+    totalSteps: 4,
+    actionTypes: [ 'SUBSCRIBE', 'OTHER', 'OTHER', 'DECLINE' ],
+    cancellationSteps: 0,
+    repeatedPromptCount: 0,
+    retentionInterference: { detected: false, count: 0 },
+    forcedActionDetected: false,
+    forcedActionType: null,
+    meaningfulBacktracking: 0,
+    cancellationDetected: false,
+    generalIntent: { detected: true, type: 'SUBSCRIBE', startIndex: 0 },
+    forcedContinuity: {
+      detected: false,
+      freeTrial: [Array],
+      paidAfterTrial: [],
+      autoRenewal: []
+    },
+    confirmShaming: [],
+    urgencySignals: [],
+    scarcitySignals: [],
+    obstructionDetected: false,
+    unclearChoiceDetected: true,
+    repeatedRetentionDetected: false
+  },
+  dataset_matches: [
+    {
+      type: 'UNCLEAR_CHOICE',
+      dataset_category: 'Misdirection',
+      matched_pattern_type: 'Trick Questions',
+      matched_pattern_string: 'Trick Questions',
+      confidence: 0.5624,
+      description: 'Unclear or distant choice buttons match misdirection patterns that obscure user intent.',
+      source: 'Princeton Dark Patterns at Scale',
+      reference_only: true
+    },
+    {
+      type: 'UNCLEAR_CHOICE',
+      dataset_category: 'Misdirection',
+      matched_pattern_type: 'Visual Interference',
+      matched_pattern_string: 'Visual Interference',
+      confidence: 0.7,
+      description: 'Unclear or distant choice buttons match misdirection patterns that obscure user intent.',
+      source: 'Princeton Dark Patterns at Scale',
+      reference_only: true
+    }
+  ],
+  evidence: [ { behavior: 'UNCLEAR_CHOICE', events: [Array] } ]
+}
+Core Analysis Results:
+{
+  "riskScore": 10,
+  "overallSeverity": "LOW",
+  "summary": {
+    "title": "Low Risk",
+    "message": "No significant behavioral manipulation signals were detected."
+  },
+  "whatHappened": "No cancellation flow was detected in the recorded interactions.",
+  "whyThisMatters": "Normal navigation was detected without significant behavioral friction."
+}
+
+Detected Behaviors:
+  - UNCLEAR_CHOICE: undefined
+
+Dataset Matches (Princeton Reference):
+  [1] UNCLEAR_CHOICE ΓåÆ Trick Questions
+      Confidence: 0.5624
+      Category: Misdirection
+      Explanation: Your observed unclear choice contains signals related to the "Trick Questions" pattern category documented in the Princeton reference dataset. This comparison is informational and based on behavioral feature analysis.
+  [2] UNCLEAR_CHOICE ΓåÆ Visual Interference
+      Confidence: 0.7
+      Category: Misdirection
+      Explanation: Your observed unclear choice contains signals related to the "Visual Interference" pattern category documented in the Princeton reference dataset. This comparison is informational and based on behavioral feature analysis.
+
+Features:
+{
+  "totalSteps": 4,
+  "actionTypes": [
+    "SUBSCRIBE",
+    "OTHER",
+    "OTHER",
+    "DECLINE"
+  ],
+  "cancellationSteps": 0,
+  "repeatedPromptCount": 0,
+  "retentionInterference": {
+    "detected": false,
+    "count": 0
+  },
+  "forcedActionDetected": false,
+  "forcedActionType": null,
+  "meaningfulBacktracking": 0,
+  "cancellationDetected": false,
+  "generalIntent": {
+    "detected": true,
+    "type": "SUBSCRIBE",
+    "startIndex": 0
+  },
+  "forcedContinuity": {
+    "detected": false,
+    "freeTrial": [
+      "Start Free Trial"
+    ],
+    "paidAfterTrial": [],
+    "autoRenewal": []
+  },
+  "confirmShaming": [],
+  "urgencySignals": [],
+  "scarcitySignals": [],
+  "obstructionDetected": false,
+  "unclearChoiceDetected": true,
+  "repeatedRetentionDetected": false
+}
+
+==============================
+13. REPEATED RETENTION (Subscription Resistance)
+==============================
+BEHAVIOR FEATURES: {
+  totalSteps: 8,
+  actionTypes: [
+    'CANCEL',  'RETENTION',
+    'DECLINE', 'RETENTION',
+    'DECLINE', 'RETENTION',
+    'DECLINE', 'CONFIRM'
+  ],
+  cancellationSteps: 8,
+  repeatedPromptCount: 6,
+  retentionInterference: { detected: true, count: 3 },
+  forcedActionDetected: true,
+  forcedActionType: 'RETENTION_OFFER',
+  meaningfulBacktracking: 0,
+  cancellationDetected: true,
+  generalIntent: { detected: true, type: 'CANCEL', startIndex: 0 },
+  forcedContinuity: {
+    detected: false,
+    freeTrial: [],
+    paidAfterTrial: [],
+    autoRenewal: []
+  },
+  confirmShaming: [],
+  urgencySignals: [],
+  scarcitySignals: [],
+  obstructionDetected: false,
+  unclearChoiceDetected: false,
+  repeatedRetentionDetected: true
+}
+BEHAVIOR RESULT: {
+  riskScore: 100,
+  overallSeverity: 'HIGH',
+  summary: {
+    title: 'High Risk Behavior',
+    message: 'Multiple behavioral signals were detected that may make the requested action difficult or encourage you to change your decision.'
+  },
+  summaryText: 'Multiple behavioral signals were detected that may make the requested action difficult or encourage you to change your decision.',
+  whatHappened: 'You started a subscription cancellation and encountered a retention offer and an additional survey before reaching confirmation.',
+  whyThisMatters: 'Multiple friction and persuasion signals were detected during the interaction.',
+  intent: {
+    detected: true,
+    type: 'CANCEL',
+    startIndex: 0,
+    cancellationDetected: true,
+    cancellationStartIndex: 0
+  },
+  behaviors: [
+    {
+      type: 'EXCESSIVE_STEPS',
+      category: 'OBSTRUCTION',
+      title: 'Excessive Steps',
+      severity: 'HIGH',
+      explanation: 'Several additional actions were required after you started cancellation.',
+      evidence: '8 meaningful actions were required after cancellation was initiated.',
+      whyItMatters: 'Extra steps can make an intended action harder to complete.',
+      evidenceEvents: [Array]
+    },
+    {
+      type: 'REPEATED_PROMPTS',
+      category: 'OTHER',
+      title: 'Repeated Prompts',
+      severity: 'HIGH',
+      explanation: 'The website presented multiple prompts or retention messages during your cancellation attempt.',
+      evidence: '6 cancellation or retention prompts were encountered.',
+      whyItMatters: 'Repeated prompts may pressure you to reconsider or make the intended action harder to complete.',
+      evidenceEvents: [Array]
+    },
+    {
+      type: 'RETENTION_INTERFERENCE',
+      category: 'PERSUASION',
+      title: 'Retention Offer',
+      severity: 'MEDIUM',
+      explanation: 'A promotional offer appeared after you started cancellation.',
+      evidence: '3 retention offers appeared after cancellation was initiated.',
+      whyItMatters: 'This may encourage you to stay instead of completing your original action.',
+      evidenceEvents: [Array]
+    },
+    {
+      type: 'FORCED_ACTION',
+      category: 'OBSTRUCTION',
+      title: 'Forced Action',
+      severity: 'HIGH',
+      explanation: 'A survey or additional action appeared before you could complete cancellation.',
+      evidence: 'A cancellation survey was encountered before final cancellation.',
+      whyItMatters: 'This adds an additional step between your decision and completing the requested action.',
+      evidenceEvents: [Array]
+    },
+    {
+      type: 'REPEATED_RETENTION',
+      category: 'PERSUASION',
+      title: 'Repeated Retention Offers',
+      severity: 'HIGH',
+      explanation: 'Multiple retention offers appeared after cancellation was initiated.',
+      evidence: '3 retention attempts occurred during cancellation.',
+      whyItMatters: 'Repeated offers can make the requested action harder to complete.',
+      evidenceEvents: [Array]
+    },
+    {
+      type: 'DIFFICULT_CANCELLATION',
+      category: 'OBSTRUCTION',
+      title: 'Difficult Cancellation',
+      severity: 'HIGH',
+      explanation: 'Multiple friction signals were detected during the cancellation process.',
+      evidence: '8 cancellation steps + 3 retention offers + survey + 6 repeated prompts detected.',
+      whyItMatters: 'The website may be making cancellation more difficult than necessary.',
+      evidenceEvents: [Array]
+    }
+  ],
+  features: {
+    totalSteps: 8,
+    actionTypes: [
+      'CANCEL',  'RETENTION',
+      'DECLINE', 'RETENTION',
+      'DECLINE', 'RETENTION',
+      'DECLINE', 'CONFIRM'
+    ],
+    cancellationSteps: 8,
+    repeatedPromptCount: 6,
+    retentionInterference: { detected: true, count: 3 },
+    forcedActionDetected: true,
+    forcedActionType: 'RETENTION_OFFER',
+    meaningfulBacktracking: 0,
+    cancellationDetected: true,
+    generalIntent: { detected: true, type: 'CANCEL', startIndex: 0 },
+    forcedContinuity: {
+      detected: false,
+      freeTrial: [],
+      paidAfterTrial: [],
+      autoRenewal: []
+    },
+    confirmShaming: [],
+    urgencySignals: [],
+    scarcitySignals: [],
+    obstructionDetected: false,
+    unclearChoiceDetected: false,
+    repeatedRetentionDetected: true
+  },
+  dataset_matches: [
+    {
+      type: 'EXCESSIVE_STEPS',
+      dataset_category: 'Obstruction',
+      matched_pattern_type: 'Hard to Cancel',
+      matched_pattern_string: 'Hard to Cancel',
+      confidence: 0.7568,
+      description: "Multiple friction signals in cancellation flow match obstruction patterns like 'Hard to Cancel'.",
+      source: 'Princeton Dark Patterns at Scale',
+      reference_only: true
+    },
+    {
+      type: 'REPEATED_PROMPTS',
+      dataset_category: 'Misdirection',
+      matched_pattern_type: 'Pressured Selling',
+      matched_pattern_string: 'Pressured Selling',
+      confidence: 0.7360000000000001,
+      description: 'Repeated persuasive prompts align with patterns designed to pressure or redirect user attention.',
+      source: 'Princeton Dark Patterns at Scale',
+      reference_only: true
+    },
+    {
+      type: 'REPEATED_PROMPTS',
+      dataset_category: 'Misdirection',
+      matched_pattern_type: 'High-demand Message',
+      matched_pattern_string: 'High-demand Message',
+      confidence: 0.7,
+      description: 'Repeated persuasive prompts align with patterns designed to pressure or redirect user attention.',
+      source: 'Princeton Dark Patterns at Scale',
+      reference_only: true
+    },
+    {
+      type: 'REPEATED_PROMPTS',
+      dataset_category: 'Urgency',
+      matched_pattern_type: 'Pressured Selling',
+      matched_pattern_string: 'Pressured Selling',
+      confidence: 0.65,
+      description: 'Repeated persuasive prompts align with patterns designed to pressure or redirect user attention.',
+      source: 'Princeton Dark Patterns at Scale',
+      reference_only: true
+    },
+    {
+      type: 'FORCED_ACTION',
+      dataset_category: 'Forced Action',
+      matched_pattern_type: 'Forced Enrollment',
+      matched_pattern_string: 'Forced Enrollment',
+      confidence: 0.7735,
+      description: 'Forced actions detected (e.g., surveys before cancellation) match forced-action and obstruction patterns.',
+      source: 'Princeton Dark Patterns at Scale',
+      reference_only: true
+    },
+    {
+      type: 'FORCED_ACTION',
+      dataset_category: 'Forced Action',
+      matched_pattern_type: 'Sneak into Basket',
+      matched_pattern_string: 'Sneak into Basket',
+      confidence: 0.7,
+      description: 'Forced actions detected (e.g., surveys before cancellation) match forced-action and obstruction patterns.',
+      source: 'Princeton Dark Patterns at Scale',
+      reference_only: true
+    },
+    {
+      type: 'FORCED_ACTION',
+      dataset_category: 'Obstruction',
+      matched_pattern_type: 'Forced Enrollment',
+      matched_pattern_string: 'Forced Enrollment',
+      confidence: 0.6535,
+      description: 'Forced actions detected (e.g., surveys before cancellation) match forced-action and obstruction patterns.',
+      source: 'Princeton Dark Patterns at Scale',
+      reference_only: true
+    },
+    {
+      type: 'RETENTION_INTERFERENCE',
+      dataset_category: 'Urgency',
+      matched_pattern_type: 'Pressured Selling',
+      matched_pattern_string: 'Pressured Selling',
+      confidence: 0.7707999999999999,
+      description: 'Retention offers appearing after cancellation intent often use urgency/scarcity pressure or misdirection.',
+      source: 'Princeton Dark Patterns at Scale',
+      reference_only: true
+    },
+    {
+      type: 'RETENTION_INTERFERENCE',
+      dataset_category: 'Urgency',
+      matched_pattern_type: 'Limited-time Message',
+      matched_pattern_string: 'Limited-time Message',
+      confidence: 0.7,
+      description: 'Retention offers appearing after cancellation intent often use urgency/scarcity pressure or misdirection.',
+      source: 'Princeton Dark Patterns at Scale',
+      reference_only: true
+    },
+    {
+      type: 'RETENTION_INTERFERENCE',
+      dataset_category: 'Misdirection',
+      matched_pattern_type: 'Pressured Selling',
+      matched_pattern_string: 'Pressured Selling',
+      confidence: 0.6507999999999999,
+      description: 'Retention offers appearing after cancellation intent often use urgency/scarcity pressure or misdirection.',
+      source: 'Princeton Dark Patterns at Scale',
+      reference_only: true
+    },
+    {
+      type: 'DIFFICULT_CANCELLATION',
+      dataset_category: 'Obstruction',
+      matched_pattern_type: 'Hard to Cancel',
+      matched_pattern_string: 'Hard to Cancel',
+      confidence: 0.792,
+      description: "Multiple friction signals in cancellation pathway directly align with the 'Hard to Cancel' obstruction pattern.",
+      source: 'Princeton Dark Patterns at Scale',
+      reference_only: true
+    },
+    {
+      type: 'REPEATED_RETENTION',
+      dataset_category: 'Obstruction',
+      matched_pattern_type: 'Hard to Cancel',
+      matched_pattern_string: 'Hard to Cancel',
+      confidence: 0.748,
+      description: 'Multiple retention offers during single cancellation attempt align with obstruction and friction patterns.',
+      source: 'Princeton Dark Patterns at Scale',
+      reference_only: true
+    },
+    {
+      type: 'REPEATED_RETENTION',
+      dataset_category: 'Misdirection',
+      matched_pattern_type: 'Hard to Cancel',
+      matched_pattern_string: 'Hard to Cancel',
+      confidence: 0.65,
+      description: 'Multiple retention offers during single cancellation attempt align with obstruction and friction patterns.',
+      source: 'Princeton Dark Patterns at Scale',
+      reference_only: true
+    }
+  ],
+  evidence: [
+    { behavior: 'EXCESSIVE_STEPS', events: [Array] },
+    { behavior: 'REPEATED_PROMPTS', events: [Array] },
+    { behavior: 'RETENTION_INTERFERENCE', events: [Array] },
+    { behavior: 'FORCED_ACTION', events: [Array] },
+    { behavior: 'REPEATED_RETENTION', events: [Array] },
+    { behavior: 'DIFFICULT_CANCELLATION', events: [Array] }
+  ]
+}
+Core Analysis Results:
+{
+  "riskScore": 100,
+  "overallSeverity": "HIGH",
+  "summary": {
+    "title": "High Risk Behavior",
+    "message": "Multiple behavioral signals were detected that may make the requested action difficult or encourage you to change your decision."
+  },
+  "whatHappened": "You started a subscription cancellation and encountered a retention offer and an additional survey before reaching confirmation.",
+  "whyThisMatters": "Multiple friction and persuasion signals were detected during the interaction."
+}
+
+Detected Behaviors:
+  - EXCESSIVE_STEPS: undefined
+  - REPEATED_PROMPTS: undefined
+  - RETENTION_INTERFERENCE: undefined
+  - FORCED_ACTION: undefined
+  - REPEATED_RETENTION: undefined
+  - DIFFICULT_CANCELLATION: undefined
+
+Dataset Matches (Princeton Reference):
+  [1] EXCESSIVE_STEPS ΓåÆ Hard to Cancel
+      Confidence: 0.7568
+      Category: Obstruction
+      Explanation: Your observed excessive steps contains signals related to the "Hard to Cancel" pattern category documented in the Princeton reference dataset. This comparison is informational and based on behavioral feature analysis.
+  [2] REPEATED_PROMPTS ΓåÆ Pressured Selling
+      Confidence: 0.7360000000000001
+      Category: Misdirection
+      Explanation: Your observed repeated prompts contains signals related to the "Pressured Selling" pattern category documented in the Princeton reference dataset. This comparison is informational and based on behavioral feature analysis.
+  [3] REPEATED_PROMPTS ΓåÆ High-demand Message
+      Confidence: 0.7
+      Category: Misdirection
+      Explanation: Your observed repeated prompts contains signals related to the "High-demand Message" pattern category documented in the Princeton reference dataset. This comparison is informational and based on behavioral feature analysis.
+  [4] REPEATED_PROMPTS ΓåÆ Pressured Selling
+      Confidence: 0.65
+      Category: Urgency
+      Explanation: Your observed repeated prompts contains signals related to the "Pressured Selling" pattern category documented in the Princeton reference dataset. This comparison is informational and based on behavioral feature analysis.
+  [5] FORCED_ACTION ΓåÆ Forced Enrollment
+      Confidence: 0.7735
+      Category: Forced Action
+      Explanation: Your observed forced action contains signals related to the "Forced Enrollment" pattern category documented in the Princeton reference dataset. This comparison is informational and based on behavioral feature analysis.
+  [6] FORCED_ACTION ΓåÆ Sneak into Basket
+      Confidence: 0.7
+      Category: Forced Action
+      Explanation: Your observed forced action contains signals related to the "Sneak into Basket" pattern category documented in the Princeton reference dataset. This comparison is informational and based on behavioral feature analysis.
+  [7] FORCED_ACTION ΓåÆ Forced Enrollment
+      Confidence: 0.6535
+      Category: Obstruction
+      Explanation: Your observed forced action contains signals related to the "Forced Enrollment" pattern category documented in the Princeton reference dataset. This comparison is informational and based on behavioral feature analysis.
+  [8] RETENTION_INTERFERENCE ΓåÆ Pressured Selling
+      Confidence: 0.7707999999999999
+      Category: Urgency
+      Explanation: Your observed retention interference contains signals related to the "Pressured Selling" pattern category documented in the Princeton reference dataset. This comparison is informational and based on behavioral feature analysis.
+  [9] RETENTION_INTERFERENCE ΓåÆ Limited-time Message
+      Confidence: 0.7
+      Category: Urgency
+      Explanation: Your observed retention interference contains signals related to the "Limited-time Message" pattern category documented in the Princeton reference dataset. This comparison is informational and based on behavioral feature analysis.
+  [10] RETENTION_INTERFERENCE ΓåÆ Pressured Selling
+      Confidence: 0.6507999999999999
+      Category: Misdirection
+      Explanation: Your observed retention interference contains signals related to the "Pressured Selling" pattern category documented in the Princeton reference dataset. This comparison is informational and based on behavioral feature analysis.
+  [11] DIFFICULT_CANCELLATION ΓåÆ Hard to Cancel
+      Confidence: 0.792
+      Category: Obstruction
+      Explanation: Your observed difficult cancellation contains signals related to the "Hard to Cancel" pattern category documented in the Princeton reference dataset. This comparison is informational and based on behavioral feature analysis.
+  [12] REPEATED_RETENTION ΓåÆ Hard to Cancel
+      Confidence: 0.748
+      Category: Obstruction
+      Explanation: Your observed repeated retention contains signals related to the "Hard to Cancel" pattern category documented in the Princeton reference dataset. This comparison is informational and based on behavioral feature analysis.
+  [13] REPEATED_RETENTION ΓåÆ Hard to Cancel
+      Confidence: 0.65
+      Category: Misdirection
+      Explanation: Your observed repeated retention contains signals related to the "Hard to Cancel" pattern category documented in the Princeton reference dataset. This comparison is informational and based on behavioral feature analysis.
+
+Features:
+{
+  "totalSteps": 8,
+  "actionTypes": [
+    "CANCEL",
+    "RETENTION",
+    "DECLINE",
+    "RETENTION",
+    "DECLINE",
+    "RETENTION",
+    "DECLINE",
+    "CONFIRM"
+  ],
+  "cancellationSteps": 8,
+  "repeatedPromptCount": 6,
+  "retentionInterference": {
+    "detected": true,
+    "count": 3
+  },
+  "forcedActionDetected": true,
+  "forcedActionType": "RETENTION_OFFER",
+  "meaningfulBacktracking": 0,
+  "cancellationDetected": true,
+  "generalIntent": {
+    "detected": true,
+    "type": "CANCEL",
+    "startIndex": 0
+  },
+  "forcedContinuity": {
+    "detected": false,
+    "freeTrial": [],
+    "paidAfterTrial": [],
+    "autoRenewal": []
+  },
+  "confirmShaming": [],
+  "urgencySignals": [],
+  "scarcitySignals": [],
+  "obstructionDetected": false,
+  "unclearChoiceDetected": false,
+  "repeatedRetentionDetected": true
+}
+
+==============================
+14. NORMAL LONG NAVIGATION (No Dark Pattern)
+==============================
+BEHAVIOR FEATURES: {
+  totalSteps: 8,
+  actionTypes: [
+    'OTHER',
+    'OTHER',
+    'OTHER',
+    'OTHER',
+    'OTHER',
+    'SUBSCRIPTION',
+    'CANCEL',
+    'CONFIRM'
+  ],
+  cancellationSteps: 2,
+  repeatedPromptCount: 0,
+  retentionInterference: { detected: false, count: 0 },
+  forcedActionDetected: false,
+  forcedActionType: null,
+  meaningfulBacktracking: 0,
+  cancellationDetected: true,
+  generalIntent: { detected: true, type: 'CANCEL', startIndex: 12 },
+  forcedContinuity: {
+    detected: false,
+    freeTrial: [],
+    paidAfterTrial: [],
+    autoRenewal: []
+  },
+  confirmShaming: [],
+  urgencySignals: [],
+  scarcitySignals: [],
+  obstructionDetected: false,
+  unclearChoiceDetected: false,
+  repeatedRetentionDetected: false
+}
+BEHAVIOR RESULT: {
+  riskScore: 0,
+  overallSeverity: 'LOW',
+  summary: {
+    title: 'Low Risk',
+    message: 'No significant behavioral manipulation signals were detected.'
+  },
+  summaryText: 'No significant behavioral manipulation signals were detected.',
+  whatHappened: 'You started a subscription cancellation without significant behavioral friction.',
+  whyThisMatters: 'Normal navigation was detected without significant behavioral friction.',
+  intent: {
+    detected: true,
+    type: 'CANCEL',
+    startIndex: 12,
+    cancellationDetected: true,
+    cancellationStartIndex: 12
+  },
+  behaviors: [],
+  features: {
+    totalSteps: 8,
+    actionTypes: [
+      'OTHER',
+      'OTHER',
+      'OTHER',
+      'OTHER',
+      'OTHER',
+      'SUBSCRIPTION',
+      'CANCEL',
+      'CONFIRM'
+    ],
+    cancellationSteps: 2,
+    repeatedPromptCount: 0,
+    retentionInterference: { detected: false, count: 0 },
+    forcedActionDetected: false,
+    forcedActionType: null,
+    meaningfulBacktracking: 0,
+    cancellationDetected: true,
+    generalIntent: { detected: true, type: 'CANCEL', startIndex: 12 },
+    forcedContinuity: {
+      detected: false,
+      freeTrial: [],
+      paidAfterTrial: [],
+      autoRenewal: []
+    },
+    confirmShaming: [],
+    urgencySignals: [],
+    scarcitySignals: [],
+    obstructionDetected: false,
+    unclearChoiceDetected: false,
+    repeatedRetentionDetected: false
+  },
+  dataset_matches: [
+    {
+      type: 'EXCESSIVE_STEPS',
+      dataset_category: 'Obstruction',
+      matched_pattern_type: 'Hard to Cancel',
+      matched_pattern_string: 'Hard to Cancel',
+      confidence: 0.7568,
+      description: "Multiple friction signals in cancellation flow match obstruction patterns like 'Hard to Cancel'.",
+      source: 'Princeton Dark Patterns at Scale',
+      reference_only: true
+    }
+  ],
+  evidence: []
+}
+Core Analysis Results:
+{
+  "riskScore": 0,
+  "overallSeverity": "LOW",
+  "summary": {
+    "title": "Low Risk",
+    "message": "No significant behavioral manipulation signals were detected."
+  },
+  "whatHappened": "You started a subscription cancellation without significant behavioral friction.",
+  "whyThisMatters": "Normal navigation was detected without significant behavioral friction."
+}
+
+Detected Behaviors:
+  (none)
+
+Dataset Matches (Princeton Reference):
+  [1] EXCESSIVE_STEPS ΓåÆ Hard to Cancel
+      Confidence: 0.7568
+      Category: Obstruction
+      Explanation: Your observed excessive steps contains signals related to the "Hard to Cancel" pattern category documented in the Princeton reference dataset. This comparison is informational and based on behavioral feature analysis.
+
+Features:
+{
+  "totalSteps": 8,
+  "actionTypes": [
+    "OTHER",
+    "OTHER",
+    "OTHER",
+    "OTHER",
+    "OTHER",
+    "SUBSCRIPTION",
+    "CANCEL",
+    "CONFIRM"
+  ],
+  "cancellationSteps": 2,
+  "repeatedPromptCount": 0,
+  "retentionInterference": {
+    "detected": false,
+    "count": 0
+  },
+  "forcedActionDetected": false,
+  "forcedActionType": null,
+  "meaningfulBacktracking": 0,
+  "cancellationDetected": true,
+  "generalIntent": {
+    "detected": true,
+    "type": "CANCEL",
+    "startIndex": 12
+  },
+  "forcedContinuity": {
+    "detected": false,
+    "freeTrial": [],
+    "paidAfterTrial": [],
+    "autoRenewal": []
+  },
+  "confirmShaming": [],
+  "urgencySignals": [],
+  "scarcitySignals": [],
+  "obstructionDetected": false,
+  "unclearChoiceDetected": false,
+  "repeatedRetentionDetected": false
+}
+
+
+========== TEST SUITE COMPLETE ==========
